@@ -1,0 +1,143 @@
+{% extends "layout_bsa_internal.html" %}
+
+{% block page_title %}
+  Single User View
+{% endblock %}
+
+{% block after_header %}
+  <div id="menu">
+    <div id="menu-content">
+      <div class="grid-row">
+        <div class="column-half">
+          <ul class="visually-hidden">
+            <li><a class="menu-button selected" href="results">Search</a></li>
+          </ul>
+        </div>
+        <div class="column-half" id="logout">
+          <a href="#">Log out</a>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+<h2 class="heading-medium">PCN Search</h2>
+    <div id="search">
+<div class="grid-row">
+   <div class="column-one-third">
+       <span class="form-label">Reference number</span>
+      <div class="form-group">
+         <input class="form-control" id="reference-number" name="first-name-2" type="text">
+      </div>
+    </div>
+
+            <div class="column-one-third">
+       <span class="form-label">Forename</span>
+       <div class="form-group">
+         <input class="form-control" id="reference-number" name="first-name-2" type="text">
+      </div>
+    </div>
+                <div class="column-one-third">
+       <span class="form-label">Surname</span>
+       <div class="form-group">
+         <input class="form-control" id="reference-number" name="first-name-2" type="text">
+      </div>
+    </div>
+        <div class="column-one-third">
+       <span class="form-label">Date of birth</span>
+       <div class="form-group">
+         <input class="form-control" id="reference-number" name="first-name-2" type="text">
+      </div>
+       </div>
+                <div class="column-one-third">
+       <span class="form-label">Postcode</span>
+       <div class="form-group">
+         <input class="form-control" id="reference-number" name="first-name-2" type="text">
+      </div>
+       </div>
+</div>
+     <div class="grid-row">
+        <div class="column-one-third">
+            <div class="form-group">
+            <a class="button" id="search-button" href="results" role="button">Search</a>
+            </div>
+        </div>
+    </div>
+</div>
+  <div class="column-full">
+      <table class="internal-table">
+          <tr>
+        <th>Reference</th>
+        <th>Name</th> 
+        <th>Address</th>
+<!--        <th>D.O.B</th>-->
+              <th></th>
+        <th>Status</th>
+      </tr>
+      <tr>
+        <td><a href="pcn">823456789</a></td>
+        <td>Claire Hornbeck</td> 
+        <td>4 The Green, Tuttington, Norwich, NR11 6GT</td>
+<!--        <td>01/06/1983</td>-->
+          <td></td>
+        <td>Open</td>
+      </tr>
+                <tr>
+        <td><a href="pcn1">923456789</a></td>
+        <td>Claire Hornbeck</td> 
+        <td>4 The Green, Tuttington, Norwich, NR11 6GT</td>
+<!--        <td>01/06/1983</td>-->
+                    <td></td>
+        <td>Held</td>
+      </tr>
+      <tr>
+        <td><a href="pcn2">133456789</a></td>
+        <td>Claire Hornbeck</td> 
+        <td>4 The Green, Tuttington, Norwich, NR11 6GT</td>
+<!--        <td>01/06/1983</td>-->
+        <td></td>
+          <td>Open</td>
+      </tr>
+                <tr>
+        <td><a href="pcn3">243456789</a></td>
+        <td>Claire Fiona Hornbeck</td> 
+        <td>4 The Green, Tuttington, Norwich, NR11 6GT</td>
+<!--        <td>01/06/1983</td>-->
+          <td></td>
+        <td>Open</td>
+      </tr>
+
+                <tr>
+        <td><a href="pcn5">463456789</a></td>
+        <td>Claire Hornbeck</td> 
+        <td>1 Goodwin Rd, Mundesley, Norwich, NR11 8BB</td>
+<!--        <td>01/06/1983</td>-->
+          <td></td>
+        <td>Closed</td>
+      </tr>
+      <tr>
+        <td><a href="pcn6">574567893</a></td>
+        <td>Claudia Horne</td> 
+        <td>39 Gimingham Rd, Mundesley, Norwich, NR11 8DG</td>
+<!--        <td>01/06/1983</td>-->
+        <td></td>
+          <td>Open</td>
+      </tr>
+                <tr>
+        <td><a href="pcn7">684567896</a></td>
+        <td>Clara Horn</td> 
+        <td>136 Norwich Rd, Aylsham, Norwich, NR11 6JG</td>
+<!--        <td>01/06/1983</td>-->
+        <td></td>
+          <td>Open</td>
+      </tr>
+    </table>
+  </div>
+  </div>    
+</main>
+
+{% endblock %}

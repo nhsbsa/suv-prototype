@@ -1,0 +1,87 @@
+{% extends "layout_bsa_internal.html" %}
+
+{% block page_title %}
+  Single User View
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="grid-row">
+    
+    <div class="column-full">
+      <div class="phase-banner">
+        <p>
+          <strong class="phase-tag">ALPHA</strong>
+          <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+        </p>
+      </div>
+    </div>
+    
+  </div>
+    <div class="breadcrumbs">
+  <ol>
+    <li><a href="search-form">PCN Search</a></li>
+    <li><a href="results">Search results</a></li>
+    <li aria-current="page">PCN details</li> 
+  </ol>
+</div>
+    
+
+    
+    <div class="grid-row">
+        
+        <div class="column-full">
+            <h1 class="heading-large">PCN 123456789</h1>
+        
+        
+        <div class="tabs-nav">
+                <ul class="tabs-list">
+                  <li><a href="pcn-details">PCN details</a></li>
+                  <li><a href="matched-records" aria-selected="true">Matched records</a></li>
+                  <li><a href="notes">Notes</a></li>
+                </ul>
+              </div>
+        
+            </div>
+    </div>
+            
+        
+    
+<div class="grid-row">
+
+  <div class="column-full">
+      <h2 class="heading-medium">Matched records</h2>
+      
+      <table class="internal-table">
+          <tr>
+        <th>Reference</th>
+        <th>Sent</th> 
+        <th>Respond by</th>
+        <th>Balance Due</th>
+      </tr>
+      <tr>
+        <td><a href="pcn-details">223456789</a></td>
+        <td>28/05/2017</td> 
+        <td>28/06/2017</td>
+          <td>£108.60</td>
+      </tr>
+      <tr>
+        <td><a href="pcn-details">323456789</a></td>
+        <td>28/04/2017</td> 
+        <td>28/05/2017</td>
+          <td>£108.60</td>
+      </tr>
+    </table>
+
+
+  </div>
+
+</div>
+            
+        
+    
+</main>
+
+{% endblock %}

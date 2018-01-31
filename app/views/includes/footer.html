@@ -1,0 +1,25 @@
+<div class="footer-wrapper">
+  {% block footer_top %}{% endblock %}
+  <div class="footer-meta">
+    <div class="footer-meta-inner">
+        {% block footer_info %}{% endblock %}
+        <ul>
+          <li><a href="#">Privacy policy and cookies</a></li>
+          <li><a href="#">Terms and conditions</a></li>
+        </ul>
+        <p>Find more information about <a href="https://www.nhsbsa.nhs.uk/nhs-help-health-costs">Help with Health Costs</a>. </p>
+        <p>&copy; NHS Business Services Authority 2017.</p>
+<!--
+      <div class="open-government-licence">
+        <p class="logo"><a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence</a></p>
+        {% block licence_message %}<p>All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated</p>{% endblock %}    
+      </div>
+-->
+    </div>
+<!--
+    <div class="copyright">
+      <a href="http://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/copyright-and-re-use/crown-copyright/">{{ crown_copyright_message|default('&copy; Crown copyright')|safe }}</a>
+    </div>
+-->
+  </div>
+</div>

@@ -1,0 +1,18 @@
+{% block head %}
+  {% include "includes/web/web_head.html" %}
+{% endblock %}
+
+{% block navigation %}{% endblock %}
+  
+{% block content %}{% endblock %}
+
+</body>
+
+  {% block body_end %}{% endblock %}
+
+  <script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>
+</html>
+
+{% block footer %}
+  {% include "includes/web/web_footer.html" %}
+{% endblock %}

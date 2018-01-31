@@ -1,0 +1,170 @@
+{% extends "layout_bsa_internal.html" %}
+
+{% block page_title %}
+  Single User View
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="grid-row">
+    
+    <div class="column-full">
+      <div class="phase-banner">
+        <p>
+          <strong class="phase-tag">ALPHA</strong>
+          <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+        </p>
+      </div>
+    </div>
+    
+  </div>
+    <div class="breadcrumbs">
+  <ol>
+    <li><a href="search-form">PCN Search</a></li>
+    <li><a href="results">Search results</a></li>
+    <li aria-current="page">PCN details</li> 
+  </ol>
+</div>
+    
+
+    
+    <div class="grid-row">
+        
+        <div class="column-full">
+            <h1 class="heading-large">PCN 123456789</h1>
+        
+        
+        <div class="tabs-nav">
+                <ul class="tabs-list">
+                  <li><a href="pcn-details" aria-selected="true">PCN details</a></li>
+                  <li><a href="matched-records">Matched records</a></li>
+                  <li><a href="notes">Notes</a></li>
+                </ul>
+              </div>
+        
+            </div>
+            
+        <div class="column-full">
+        
+        <div class="column-one-half">
+    
+    <div class="grid-row">
+        
+        
+
+
+        <h1 class="heading-medium">PCN details</h1>
+
+        <div class="column-one-half">
+            <h2 class="heading-small">Prescription Charge</h2>
+            <p>£8.60</p>
+            <h2 class="heading-small">Penalty Charge</h2>
+            <p>£50</p>
+            <h2 class="heading-small">Surcharge</h2>
+            <p>£51</p>
+            <h2 class="heading-small">Balance Due</h2>
+            <p>£109.60</p>
+
+
+    </div>
+        
+        
+    <div class="column-one-half">
+            <h2 class="heading-small">Exemption Category</h2>
+            <p>(F) Pre-payment Certificate</p>
+            <h2 class="heading-small">PCN Sent</h2>
+            <p>28/06/2017</p>
+            <h2 class="heading-small">Respond by</h2>
+            <p>28/07/2017</p>
+    </div>
+ 
+</div>
+            
+        </div>
+        
+                <div class="column-one-half">
+    
+    
+
+<div class="grid-row">
+
+  
+
+        <h1 class="heading-medium">Customer details</h1>
+    
+
+        <div class="column-one-half">
+            
+            
+            <h2 class="heading-small">Title</h2>
+            <p>Mr</p>
+            <a href="#">Change</a>
+            <h2 class="heading-small">First Name</h2>
+            <p>Joe</p>
+            <a href="#">Change</a>
+            <h2 class="heading-small">Surname</h2>
+            <p>Bloggs</p>
+            <a href="#">Change</a>
+            <h2 class="heading-small">Address</h2>
+            <p>9 Hotspur street, Townford, NE1 0LD</p>
+            <a href="#">Change</a>
+    </div>
+    <div class="column-one-half">
+            <h2 class="heading-small">Date of Birth</h2>
+            <p>20/11/1988</p>
+        <a href="#">Change</a>
+            <h2 class="heading-small">NHS Number</h2>
+            <p>20111988</p>
+        <a href="#">Change</a>
+            <h2 class="heading-small">Email Address</h2>
+            <p>j.blog@email.com</p>
+        <a href="#">Change</a>
+            <h2 class="heading-small">Tel number</h2>
+            <p>07837881678</p>
+        <a href="#">Change</a>
+    
+    </div>
+ 
+</div>
+    
+        </div>
+        
+        </div>
+        
+        </div>
+    
+    <div class="grid-row">
+
+  <div class="column-full">
+      <h2 class="heading-medium">Transactions</h2>
+      
+      <table class="internal-table">
+          <tr>
+        <th>Date</th>
+        <th>User</th> 
+        <th>Amount</th>
+        <th>Type</th>
+      </tr>
+      <tr>
+        <td>28/05/2017</td>
+        <td>System</td> 
+        <td>£58.60</td>
+          <td>Payment request</td>
+      </tr>
+      <tr>
+        <td>28/06/2017</td>
+        <td>System</td> 
+        <td>£51</td>
+          <td>Surcharge added</td>
+      </tr>
+    </table>
+
+  </div>
+
+</div>
+
+</main>
+
+{% endblock %}
