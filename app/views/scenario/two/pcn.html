@@ -17,9 +17,23 @@
             <div class="form-group">
               <select class="form-control" id="select-box" name="select-box" onchange="location = this.value;">
                 <option selected hidden>Close</option>
-                <option value="results">Incorrect personal details</option>
-                  <option value="results">Incorrect address</option>
-                <option value="results">Deceased</option>
+                  <div>
+                <option value="results">Incorrect forename</option>
+                  <option value="results">Incorrect surname</option>
+                <option value="results">Incorrect address</option>
+                      <option value="results">Incorrect post code</option>
+                      <option value="results">Incorrect date of birth</option>
+                      <option value="results">Mismatched exemption category</option>
+                      <option value="results">Dead letter</option>
+                      <option value="results">Letter returned</option>
+                      <option value="results">Patient paid</option>
+                      <option value="results">Keying error</option>
+                      <option value="results">Patient deceased</option>
+                      <option value="results">MEDEX/MATEX Ex Gratia payment processed</option>
+                      <option value="results">Refund processed</option>
+                      <option value="results">Exemption confirmed</option>
+                      <option value="results">Full payment recieved</option>
+                    </div>
               </select>
             </div>
             </li>
@@ -27,9 +41,11 @@
             <div class="form-group">
               <select class="form-control" id="select-box" name="select-box" onchange="location = this.value;">
                 <option selected hidden>Hold</option>
-                <option value="results">1 Day</option>
-                  <option value="results">7 Days</option>
                 <option value="results">14 Days</option>
+                  <option value="results">28 Days</option>
+                <option value="results">30 Days</option>
+                                  <option value="results">60 Days</option>
+                                  <option value="results">90 Days</option>
               </select>
             </div>
             </li>
@@ -48,65 +64,32 @@
 
 <main id="content" role="main">
     <div class="grid-row">
+        
         <div class="column-full">
-            <div class="column-one-third lpads det-width">
-                <div class="grid-row highlight">
-                    <h1 class="heading-small">PCN 123456789</h1>
-                    <div class="column-one-half lpads">
-                        <h2 class="heading-small">Prescription</h2>
-                        <p>£8.60</p>
-                        <h2 class="heading-small">Penalty</h2>
-                        <p>£50</p>
-                        <h2 class="heading-small">Surcharge</h2>
-                        <p>£50 10/11/2017</p>
-                        <h2 class="heading-small">Paid</h2>
-                        <p>£0</p>
-                        <h2 class="heading-small">Balance</h2>
-                        <p>£108.60</p>
-                        <h2 class="heading-small">Sent</h2>
-                        <p>12/10/2017</p>
-                        <h2 class="heading-small">Respond</h2>
-                        <p>09/11/2017</p>
-                    </div>
-                    <div class="column-one-half det-width">
-                        <h2 class="heading-small">Items</h2>
-                        <p>1</p>
-                        <h2 class="heading-small">Dispenser</h2>
-                        <p>FRN15</p>
-                        <h2 class="heading-small">Exemption</h2>
-                        <p>(E) Medical exemption</p>
-                        <h2 class="heading-small">Evidence</h2>
-                        <p>No</p>
-                        <h2 class="heading-small">DWP</h2>
-                        <p>No</p>
-                        <p><a href="#">View Prescription</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="column-one-third det-width">
-                <div class="grid-row highlight">
-                    <h1 class="heading-small">Customer</h1>
-                    <div class="column-one-half lpads">
-                        <h2 class="heading-small">Title</h2>
-                        <p class="change-spacep">Mr</p>
-                        <p class="change-spacea"><a href="#">Change</a></p>
-                        <h2 class="heading-small">Forename</h2>
-                        <p class="change-spacep">Joe</p>
-                        <p class="change-spacea"><a href="#">Change</a></p>
-                        <h2 class="heading-small">Surname</h2>
-                        <p class="change-spacep">Bloggs</p>
-                        <p class="change-spacea"><a href="#">Change</a></p>
+                        <div class="column-one-third det-width2">
+                <div class="grid-row highlight1">
+                    <br>
+                    <div class="column-one-third lpads">
+                        <h2 class="heading-small">Name</h2>
+                        <p class="change-spacep">Mr Joe Bloggs</p>
+                        <p class="change-spacea"><br></p>
                         <h2 class="heading-small">Address</h2>
                         <p class="change-spacep">30 Forest Rd, Northallerton, DL6 1JZ</p>
-                        <p class="change-spacea"><a href="#">Change</a></p>
+                        <p class="change-spacea"><br></p>
+
                     </div>
-                    <div class="column-one-half">
-                        <h2 class="heading-small">D.O.B</h2>
+                    <div class="column-one-third">
+                                                                        <h2 class="heading-small">D.O.B</h2>
                         <p class="change-spacep">02/03/1975</p>
-                        <p class="change-spacea"><a href="#">Change</a></p>
+                        <p class="change-spacea"><br></p>
                         <h2 class="heading-small">NHS No.</h2>
                         <p class="change-spacep">6253768891</p>
-                        <p class="change-spacea"><a href="#">Change</a></p>
+                        <p class="change-spacea"><br></p>
+
+                    </div>
+                                        <div class="column-one-third">
+
+
                         <h2 class="heading-small">Email</h2>
                         <input class="form-control" id="reference-number" name="first-name-2" type="text">
                         <p class="change-spacea"><a href="#">Add</a></p>
@@ -115,19 +98,116 @@
                         <p class="change-spacea"><a href="#">Add</a></p>
                     </div>
                 </div>
-            </div>
-            <div class="column-one-third rpads tab-area">
+
                 <br>
                 <div class="column-full rpads">
                     <div class="container rpads">
                         <ul class="tabs rpads">
-                            <li class="tab-link current" data-tab="tab-1">Transactions</li>
-                            <li class="tab-link" data-tab="tab-2">Notes</li>
-                            <li class="tab-link" data-tab="tab-3">Matches</li>
+                            <li class="tab-link current" data-tab="tab-3">Matches</li>
                             <li class="tab-link" data-tab="tab-4">Possible matches</li>
                         </ul>
-                        <div id="tab-1" class="tab-content current rpads">
-                            <div class="makeScrollable">
+
+
+                        <div id="tab-3" class="tab-content current">
+                            <div class="makeScrollable2">
+                          <table class="internal-table">
+                              <thead>
+                                <tr>
+                                    <th>Reference</th>
+                                    <th>Sent</th> 
+                                    <th>Respond</th>
+                                    <th>Balance</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                              <tbody>
+                                                                    <tr>
+                                    <th><a href="pcn2">223456789</a></th>
+                                    <th>00/00/0000</th> 
+                                    <th>00/00/0000</th>
+                                    <th>£68.60</th>
+                                    <th>Open</th>
+                                </tr>
+                                <tr>
+                                    <th><a href="pcn1">323456789</a></th>
+                                    <th>30/01/2018</th> 
+                                    <th>27/02/2018</th>
+                                    <th>£118.60</th>
+                                    <th>Open</th>
+                                </tr>
+                                  </tbody>
+                            </table>
+                            </div>
+                        </div>
+                        <div id="tab-4" class="tab-content">
+                            <div class="makeScrollable2">
+                          <table class="internal-table">
+                                <thead>
+                                <tr>
+                                    <th>Reference</th>
+                                    <th>Name</th> 
+                                    <th>Address</th>
+                                    <th>Postcode</th>
+                                    <th>Status</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th><a href="pcn3">123456789</a></th>
+                                    <th>Joesph Bloggs</th> 
+                                    <th>75 Hart Road, Northallerton</th>
+                                    <th>DL6 3YA</th>
+                                    <th>Open</th>
+                                </tr>
+                                </tbody>
+                            </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>                                
+            </div>
+            <div class="column-one-third lpads det-width3">
+                <div class="grid-row highlight1">
+                    <h1 class="heading-small">PCN 423456789</h1>
+                    <p><a href="/public/images/prototypes/1/prescription-nhs.png">View Prescription</a></p>
+                    <div class="column-one-third lpads">
+                        <h2 class="heading-small">Items</h2>
+                        <p>1</p>
+                        <h2 class="heading-small">Prescription</h2>
+                        <p>£8.60</p>
+                        <h2 class="heading-small">Penalty</h2>
+                        <p>£60</p>
+                        <h2 class="heading-small">Surcharge</h2>
+                        <p>£0</p>
+                    </div>
+                    <div class="column-one-third">
+                        <h2 class="heading-small">Balance</h2>
+                        <p>£118.60</p>
+                        <h2 class="heading-small">Paid</h2>
+                        <p>£0</p>
+                        <h2 class="heading-small">Sent</h2>
+                        <p>30/01/2018</p>
+                        <h2 class="heading-small">Respond</h2>
+                        <p>27/02/2018</p>
+                    </div>
+                    <div class="column-one-third">
+                        <h2 class="heading-small">Dispenser</h2>
+                        <p>FRN15</p>
+                        <h2 class="heading-small">Exemption</h2>
+                        <p>(F) prescription pre-payment certificate</p>
+                        <h2 class="heading-small">Evidence</h2>
+                        <p>No</p>
+                        <h2 class="heading-small">DWP</h2>
+                        <p>No</p>
+                    </div>
+                    <div class="column-full rpads">
+                    <div class="container rpads">
+                        <ul class="tabs1 rpads">
+                                                        <li class="tab-link current1" data-tab1="tab-2">Notes</li>
+                            <li class="tab-link" data-tab1="tab-1">Transactions</li>
+                        </ul>
+                        <div id="tab-1" class="tab1-content rpads">
+                            <div class="makeScrollable1">
                             <table class="internal-table">
                                 <thead>  
                                 <tr>
@@ -139,24 +219,17 @@
                                     </thead>
                                 <tbody>
                               <tr>
-                                <td>12/10/2017</td>
+                                <td>28/01/2018</td>
                                 <td>System</td> 
-                                <td>£58.60</td>
+                                <td>£68.60</td>
                                   <td>Payment request</td>
-                              </tr>
-                              <tr>
-                                <td>10/11/2017</td>
-                                <td>System</td> 
-                                <td>£50</td>
-                                  <td>Surcharge added</td>
                               </tr>
                                 </tbody>
                             </table>
                             </div>
-                            <p><a href="#">+ Add transaction</a></p>
                         </div>
-                        <div id="tab-2" class="tab-content">    
-                            <div class="makeScrollable">
+                        <div id="tab-2" class="tab1-content current1">    
+                            <div class="makeScrollable1">
                             <table class="internal-table">
                                 <thead>
                                   <tr>
@@ -167,18 +240,7 @@
                                 </thead>
                                 
                                 <tbody>
-                                    <div>
-                              <tr>
-                                <td>08/11/2017 13.00</td>
-                                <td>Tim</td> 
-                                <td>Cust wife phoned on behalf, awaiting permission from cust. Warned her of surcharge deadline</td>
-                              </tr>
-                            <tr>
-                                <td>08/11/2017 17.30</td>
-                                <td>Joanne</td> 
-                                <td>cust was called back, no response</td>
-                              </tr>
-                                        </div>
+
                                 </tbody>
                                     
                             </table>
@@ -187,63 +249,13 @@
                                 
                             <br>
                         </div>
-                        <div id="tab-3" class="tab-content">
-                            <div class="makeScrollable">
-                          <table class="internal-table">
-                              <thead>
-                                <tr>
-                                    <th>Reference</th>
-                                    <th>Sent</th> 
-                                    <th>Respond</th>
-                                    <th>Balance</th>
-                                    <th>Status</th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                              <tbody>
-                                <tr>
-                                    <td><a href="pcn1">223456789</a></td>
-                                    <td>07/09/17</td> 
-                                    <td>05/10/17</td>
-                                    <td>£88.60</td>
-                                    <td>Open</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td><a href="pcn2">323456789</a></td>
-                                    <td>14/02/17</td> 
-                                    <td>14/03/17</td>
-                                    <td>£58.60</td>
-                                    <td>Closed</td>
-                                    <td></td>
-                                </tr>
-                                  </tbody>
-                            </table>
-                            </div>
-                        </div>
-                                                <div id="tab-4" class="tab-content">
-                            <div class="makeScrollable">
-                          <table class="internal-table">
-                                <thead>
-                                <tr>
-                                    <th>Reference</th>
-                                    <th>Name</th> 
-                                    <th>Address</th>
-                                    <th>Postcode</th>
-                                    <th>D.O.B</th>
-                                    <th></th>
-                                </tr>
-                                </thead>
-                                <tbody>
 
-                                </tbody>
-                            </table>
-                            </div>
-
-                        </div>
                     </div>
-                </div>                                
+                </div>
+                </div>
+                
             </div>
+            
         </div>
     </div>
 </main>
