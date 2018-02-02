@@ -1,4 +1,4 @@
-{% extends "layout_bsa_internal.html" %}
+﻿{% extends "layout_bsa_internal.html" %}
 
 {% block page_title %}
   Single User View
@@ -11,7 +11,10 @@
         <div class="column-half">
           <ul>
             <li>
-              <a class="menu-button" href="results">Back to search</a>
+              <a class="menu-button" id="select-box" href="results">Back to search</a>
+            </li>
+            <li>
+              <a class="menu-button" id="select-box" href="results">Reports</a>
             </li>
             <li>
             <div class="form-group">
@@ -216,6 +219,8 @@
                                 </tbody>
                             </table>
                             </div>
+                            <p><a href="#">Process balance transfer</a></p>
+                            <p><a href="#">Process refund</a></p>
                         </div>
                         <div id="tab-2" class="tab1-content current1">    
                             <div class="makeScrollable1">
