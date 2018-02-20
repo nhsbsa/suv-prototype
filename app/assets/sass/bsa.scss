@@ -32,7 +32,15 @@ body {
   color: #333333;
 }
 
-input.form-control, textarea.form-control {
+input.form-control{
+  border: 2px solid grey;
+}
+
+select.form-control{
+    border: 2px solid grey;
+}
+
+#reference-number {
   height: 30px;
   margin-bottom: 3px;
   border: 2px solid grey;
