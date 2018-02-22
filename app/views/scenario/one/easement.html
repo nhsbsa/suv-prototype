@@ -1,0 +1,64 @@
+{% extends "layout_bsa_popup.html" %}
+
+{% block page_title %}
+  Single User View
+{% endblock %}
+
+{% block after_header %}
+
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+    <div class="grid-row">
+        
+        <div class="column-full highlight1">
+
+            <h1 class="heading-large">Ease penalty</h1>
+            
+            <form action="tabs-below" method="get" class="form">
+
+        <div class="form-group">
+<label class="form-label">Reason for easement</label>
+            <br>
+          <textarea style="height: 150px; width:500px;"></textarea>
+        </div>
+                
+                            <div class="form-group">
+            <label class="form-label">Time on hold</label>
+            <br>
+  <select class="form-control" name="select-box">
+    <option>14 Days</option>
+    <option>28 Days</option>
+      <option>30 Days</option>
+      <option>60 Days</option>
+      <option>90 Days</option>
+  </select>
+                   <br>
+        <br>
+        </div>
+        
+        <br>
+        
+        <div class="form-item-wrapper">
+          <div class="form-group">
+            <input class="button" onclick="JavaScript:window.close()" type="submit" value="Submit">
+          </div>
+        </div>
+
+        <p class="navigation"><a class="cancel" href="JavaScript:window.close()">Cancel</a></p>
+        
+      </form>
+            
+            
+            
+            <br>
+            <br>
+            
+
+        </div>
+    </div>
+</main>
+
+{% endblock %}
