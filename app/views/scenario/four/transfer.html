@@ -1,0 +1,67 @@
+{% extends "layout_bsa_popup.html" %}
+
+{% block page_title %}
+  Single User View
+{% endblock %}
+
+
+
+{% block after_header %}
+
+
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+    <div class="grid-row">
+        
+        <div class="column-full highlight1">
+
+            <h1 class="heading-large">Balance transfer</h1>
+            
+            <br>
+            
+<form action="JavaScript:window.close()" method="get" class="form">
+
+        <div class="form-group">
+            <label class="form-label">Amount to transfer</label>
+            <br>
+            <span style="font-weight: 700">£</span>
+          <input class="form-control form-control-1-8" id="form-control-1-8" type="text" name="form-control-1-8">
+                   <br>
+        <br>
+        </div>
+    
+            <div class="form-group">
+            <label class="form-label">PCN it's transferring to</label>
+            <br>
+  <select class="form-control" name="select-box">
+    <option>823456789</option>
+
+  </select>
+                   <br>
+        <br>
+        </div>
+
+        <br>
+        <br>
+        
+        <div class="form-item-wrapper">
+          <div class="form-group">
+            <input class="button" type="submit" value="Submit">
+          </div>
+        </div>
+
+        <p class="navigation"><a class="cancel" href="JavaScript:window.close()">Cancel</a></p>
+        
+      </form>
+            
+            <br>
+            
+
+        </div>
+    </div>
+</main>
+
+{% endblock %}
