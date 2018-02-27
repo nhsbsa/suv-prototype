@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block after_header %}
-  <div id="menu">
+   <div id="menu">
     <div id="menu-content">
       <div class="grid-row">
         <div class="column-half">
@@ -14,40 +14,7 @@
               <a class="menu-button" href="results">Back to search</a>
             </li>
             <li>
-            <div class="form-group">
-              <select class="form-control" id="select-box" name="select-box" onchange="location = this.value;">
-                <option selected hidden>Close</option>
-                  <div>
-                <option value="results">Incorrect forename</option>
-                  <option value="results">Incorrect surname</option>
-                <option value="results">Incorrect address</option>
-                      <option value="results">Incorrect post code</option>
-                      <option value="results">Incorrect date of birth</option>
-                      <option value="results">Mismatched exemption category</option>
-                      <option value="results">Dead letter</option>
-                      <option value="results">Letter returned</option>
-                      <option value="results">Patient paid</option>
-                      <option value="results">Keying error</option>
-                      <option value="results">Patient deceased</option>
-                      <option value="results">MEDEX/MATEX Ex Gratia payment processed</option>
-                      <option value="results">Refund processed</option>
-                      <option value="results">Exemption confirmed</option>
-                      <option value="results">Full payment recieved</option>
-                    </div>
-              </select>
-            </div>
-            </li>
-            <li>
-            <div class="form-group">
-              <select class="form-control" id="select-box" name="select-box" onchange="location = this.value;">
-                <option selected hidden>Hold</option>
-                <option value="results">14 Days</option>
-                  <option value="results">28 Days</option>
-                <option value="results">30 Days</option>
-                                  <option value="results">60 Days</option>
-                                  <option value="results">90 Days</option>
-              </select>
-            </div>
+                <a class="menu-button" href="results">Reopen</a>
             </li>
           </ul>
         </div>
@@ -249,6 +216,9 @@
                                 </tbody>
                             </table>
                             </div>
+                                                                                    <br>
+                            <p><a href="" onClick="MyWindow=window.open('easement','MyWindow','width=600,height=600'); return false;">Ease penalty</a></p>
+                        </div>
                         </div>
                         <div id="tab-2" class="tab1-content current1">    
                             <div class="makeScrollable1">
@@ -276,7 +246,7 @@
                                     
                             </table>
                             </div>
-                            <p><a href="#">+ Add note</a></p>
+                                                        <br>                             <p><a href="addNote" onClick="MyWindow=window.open('addNote','MyWindow','width=600,height=450'); return false;">+ Add note</a></p>
                                 
                             <br>
                         </div>
