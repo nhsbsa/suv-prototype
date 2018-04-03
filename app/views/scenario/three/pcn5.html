@@ -13,6 +13,9 @@
             <li>
               <a class="menu-button" href="results">Back to search</a>
             </li>
+                          <li>
+              <a class="menu-button" href="hold.html" onClick="MyWindow=window.open('hold','MyWindow','width=600,height=600'); return false;">Hold</a>
+            </li>
             <li>
             <div class="form-group">
               <select class="form-control" id="select-box" name="select-box" onchange="location = this.value;">
@@ -34,18 +37,6 @@
                       <option value="results">Exemption confirmed</option>
                       <option value="results">Full payment recieved</option>
                     </div>
-              </select>
-            </div>
-            </li>
-            <li>
-            <div class="form-group">
-              <select class="form-control" id="select-box" name="select-box" onchange="location = this.value;">
-                <option selected hidden>Hold</option>
-                <option value="results">14 Days</option>
-                  <option value="results">28 Days</option>
-                <option value="results">30 Days</option>
-                                  <option value="results">60 Days</option>
-                                  <option value="results">90 Days</option>
               </select>
             </div>
             </li>
@@ -110,7 +101,7 @@
 
                         <div id="tab-3" class="tab-content current">
                             <div class="makeScrollable2">
-                          <table class="internal-table">
+                          <table class="internal2-table">
                               <thead>
                                 <tr>
                                     <th>Reference</th>
@@ -122,39 +113,39 @@
                             </thead>
                               <tbody>
                                                                     <tr>
-                                    <th><a href="pcn4">523456789</a></th>
-                                    <th>02/10/2017</th> 
-                                    <th>01/12/2017</th>
-                                    <th>£118.60</th>
-                                    <th>Open</th>
+                                    <td><a href="pcn4">523456789</a></td>
+                                    <td>02/10/2017</td> 
+                                    <td>01/12/2017</td>
+                                    <td>£118.60</td>
+                                    <td>Open</td>
                                 </tr>
                                 <tr>
-                                    <th><a href="pcn3">423456789</a></th>
-                                    <th>02/08/2017</th> 
-                                    <th>01/10/2017</th>
-                                    <th>£118.60</th>
-                                    <th>Held</th>
+                                    <td><a href="pcn3">423456789</a></td>
+                                    <td>02/08/2017</td> 
+                                    <td>01/10/2017</td>
+                                    <td>£118.60</td>
+                                    <td>Held</td>
                                 </tr>
                                                                   <tr>
-                                    <th><a href="pcn2">323456789</a></th>
-                                    <th>02/06/2017</th> 
-                                    <th>01/08/2017</th>
-                                    <th>£118.60</th>
-                                    <th>Closed</th>
+                                    <td><a href="pcn2">323456789</a></td>
+                                    <td>02/06/2017</td> 
+                                    <td>01/08/2017</td>
+                                    <td>£118.60</td>
+                                    <td>Closed: Exeptional Circs</td>
                                 </tr>
                                                                   <tr>
-                                    <th><a href="pcn1">223456789</a></th>
-                                    <th>02/04/2017</th>  
-                                    <th>01/06/2017</th>
-                                    <th>£118.60</th>
-                                    <th>Closed</th>
+                                    <td><a href="pcn1">223456789</a></td>
+                                    <td>02/04/2017</td>  
+                                    <td>01/06/2017</td>
+                                    <td>£118.60</td>
+                                    <td>Closed: Exeptional Circs</td>
                                 </tr>
                                                                   <tr>
-                                    <th><a href="pcn">123456789</a></th>
-                                    <th>01/02/2017</th>  
-                                    <th>02/04/2017</th>
-                                    <th>£118.60</th>
-                                    <th>Closed</th>
+                                    <td><a href="pcn">123456789</a></td>
+                                    <td>01/02/2017</td>  
+                                    <td>02/04/2017</td>
+                                    <td>£118.60</td>
+                                    <td>Closed: Exeptional Circs</td>
                                 </tr>
                                   
                                   </tbody>
@@ -184,7 +175,7 @@
             </div>
             <div class="column-one-third lpads det-width3">
                 <div class="grid-row highlight1">
-                    <h1 class="heading-small">PCN 623456789</h1>
+                    <h1 class="heading-medium">PCN 623456789: Open</h1>
                     <p><a href="/public/images/prototypes/1/prescription-nhs.png">View Prescription</a></p>
                     <div class="column-one-third lpads">
                         <h2 class="heading-small">Items</h2>

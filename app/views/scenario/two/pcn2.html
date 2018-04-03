@@ -13,6 +13,9 @@
             <li>
               <a class="menu-button" href="results">Back to search</a>
             </li>
+                          <li>
+              <a class="menu-button" href="hold.html" onClick="MyWindow=window.open('hold','MyWindow','width=600,height=600'); return false;">Hold</a>
+            </li>
             <li>
             <div class="form-group">
               <select class="form-control" id="select-box" name="select-box" onchange="location = this.value;">
@@ -34,18 +37,6 @@
                       <option value="results">Exemption confirmed</option>
                       <option value="results">Full payment recieved</option>
                     </div>
-              </select>
-            </div>
-            </li>
-            <li>
-            <div class="form-group">
-              <select class="form-control" id="select-box" name="select-box" onchange="location = this.value;">
-                <option selected hidden>Hold</option>
-                <option value="results">14 Days</option>
-                  <option value="results">28 Days</option>
-                <option value="results">30 Days</option>
-                                  <option value="results">60 Days</option>
-                                  <option value="results">90 Days</option>
               </select>
             </div>
             </li>
@@ -110,7 +101,7 @@
 
                         <div id="tab-3" class="tab-content current">
                             <div class="makeScrollable2">
-                          <table class="internal-table">
+                          <table class="internal2-table">
                               <thead>
                                 <tr>
                                     <th>Reference</th>
@@ -122,18 +113,18 @@
                             </thead>
                               <tbody>
                                                                     <tr>
-                                    <th><a href="pcn">423456789</a></th>
-                                    <th>30/01/2018</th> 
-                                    <th>27/02/2018</th>
-                                    <th>£68.60</th>
-                                    <th>Open</th>
+                                    <td><a href="pcn">423456789</a></td>
+                                    <td>30/01/2018</td> 
+                                    <td>27/02/2018</td>
+                                    <td>£68.60</td>
+                                    <td>Open</td>
                                 </tr>
                                 <tr>
-                                    <th><a href="pcn1">323456789</a></th>
-                                    <th>28/12/2017</th> 
-                                    <th>25/01/2018</th>
-                                    <th>£118.60</th>
-                                    <th>Open</th>
+                                    <td><a href="pcn1">323456789</a></td>
+                                    <td>28/12/2017</td> 
+                                    <td>25/01/2018</td>
+                                    <td>£118.60</td>
+                                    <td>Open</td>
                                 </tr>
                                   </tbody>
                             </table>
@@ -153,11 +144,11 @@
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <th><a href="pcn3">123456789</a></th>
-                                    <th>Joesph Bloggs</th> 
-                                    <th>75 Hart Road, Northallerton</th>
-                                    <th>DL6 3YA</th>
-                                    <th>Closed</th>
+                                    <td><a href="pcn3">123456789</a></td>
+                                    <td>Joesph Bloggs</td> 
+                                    <td>75 Hart Road, Northallerton</td>
+                                    <td>DL6 3YA</td>
+                                    <td>Closed</td>
                                 </tr>
                                 </tbody>
                             </table>
@@ -168,7 +159,7 @@
             </div>
             <div class="column-one-third lpads det-width3">
                 <div class="grid-row highlight1">
-                    <h1 class="heading-small">PCN 223456789</h1>
+                    <h1 class="heading-medium">PCN 223456789: Open</h1>
                     <p><a href="/public/images/prototypes/1/prescription-nhs.png">View Prescription</a></p>
                     <div class="column-one-third lpads">
                         <h2 class="heading-small">Items</h2>
