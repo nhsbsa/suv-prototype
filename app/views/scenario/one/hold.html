@@ -4,10 +4,7 @@
   Single User View
 {% endblock %}
 
-
-
 {% block after_header %}
-
 
 {% endblock %}
 
@@ -18,20 +15,31 @@
         
         <div class="column-full highlight1">
 
-            <h1 class="heading-large">Create note</h1>
+            <h1 class="heading-large">Place penalty on hold</h1>
             
             <form action="tabs-below" method="get" class="form">
 
         <div class="form-group">
-
+<label class="form-label">Reason for holding</label>
+            <br>
           <textarea style="height: 150px; width:500px;"></textarea>
         </div>
                 
-                <input type="checkbox" class="applyAll"> Apply to all matched records<br>
+                            <div class="form-group">
+            <label class="form-label">Time on hold</label>
+            <br>
+  <select class="form-control" name="select-box">
+    <option>14 Days</option>
+    <option>28 Days</option>
+      <option>30 Days</option>
+      <option>60 Days</option>
+      <option>90 Days</option>
+  </select>
+                   <br>
+        <br>
+        </div>
         
         <br>
-                
-
         
         <div class="form-item-wrapper">
           <div class="form-group">
