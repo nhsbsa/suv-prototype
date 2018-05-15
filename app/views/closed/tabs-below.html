@@ -37,21 +37,21 @@
                 <div class="grid-row highlight1">
                     <br>
                     <div class="column-one-third lpads">
-                        <h2 class="heading-small">Name</h2>
-                        <p class="change-spacep">Mr Joe Bloggs</p>
-                        <p class="change-spacea"><br></p>
+                                                <h2 class="heading-small">Name</h2>
+                        <input class="form-control" id="reference-number" name="first-name-2" type="text" value="Mr Joe Bloggs">
+                        <p class="change-spacea"></p>
                         <h2 class="heading-small">Address</h2>
-                        <p class="change-spacep">9 Hotspur street, Townford, NE1 0LD</p>
-                        <p class="change-spacea"><br></p>
-
+                        <textarea name="textarea" id="textarea" rows="2">9 Hotspur street, Townford, NE1 0LD</textarea>
+                        <p class="change-spacea"></p>
                     </div>
                     <div class="column-one-third">
-                                                                        <h2 class="heading-small">D.O.B</h2>
-                        <p class="change-spacep">20/11/1988</p>
-                        <p class="change-spacea"><br></p>
+                        
+                                                <h2 class="heading-small">D.O.B</h2>
+                        <input class="form-control" id="reference-number" name="first-name-2" type="text" value="20/11/1988">
+                        <p class="change-spacea"></p>
                         <h2 class="heading-small">NHS No.</h2>
-                        <p class="change-spacep">20111988</p>
-                        <p class="change-spacea"><br></p>
+                        <input class="form-control" id="reference-number" name="first-name-2" type="text" value="20111988">
+                        <p class="change-spacea"></p>
 
                     </div>
                                         <div class="column-one-third">
@@ -59,10 +59,10 @@
 
                         <h2 class="heading-small">Email</h2>
                         <input class="form-control" id="reference-number" name="first-name-2" type="text">
-                        <p class="change-spacea"><a href="#">Add</a></p>
+                        <p class="change-spacea"></p>
                         <h2 class="heading-small">Tel</h2>
                         <input class="form-control" id="reference-number" name="first-name-2" type="text">
-                        <p class="change-spacea"><a href="#">Add</a></p>
+                        <p class="change-spacea"></p>
                     </div>
                 </div>
 
@@ -109,6 +109,7 @@
                             </table>
                             </div>
                         </div>
+                        
                         <div id="tab-4" class="tab-content">
                             <div class="makeScrollable2">
                           <table class="internal-table">
@@ -162,44 +163,53 @@
                     <h1 class="heading-medium">PCN 123456789: Closed</h1>
                     <p><a href="/public/images/prototypes/1/prescription-nhs.png" onClick="MyWindow=window.open('/public/images/prototypes/1/prescription-nhs.png','MyWindow','width=600,height=550'); return false;">View Prescription</a></p>
                     <div class="column-one-third lpads">
-                        <h2 class="heading-small">Items</h2>
-                        <p>1</p>
+
                         <h2 class="heading-small">Prescription</h2>
                         <p>£8.60</p>
                         <h2 class="heading-small">Penalty</h2>
                         <p>£50</p>
                         <h2 class="heading-small">Surcharge</h2>
                         <p>£51</p>
-                                                <h2 class="heading-small">Balance</h2>
+                                                <h2 class="heading-small">Requested</h2>
+                        <p>£109.60</p>
+                        <h2 class="heading-small">Paid</h2>
+                        <p>£0</p>
+                                                                                                <h2 class="heading-small">Balance due</h2>
                         <p>£109.60</p>
 
                     </div>
                     <div class="column-one-third">
-                        <h2 class="heading-small">Paid</h2>
-                        <p>£0</p>
-                        <h2 class="heading-small">Sent</h2>
+
+
+                        <h2 class="heading-small">PCN Sent</h2>
                         <p>28/06/2017</p>
-                        <h2 class="heading-small">Respond</h2>
+                                                <h2 class="heading-small">Surcharge Sent</h2>
+                        <p>28/06/2017</p>
+                        <h2 class="heading-small">Respond by</h2>
                         <p>28/07/2017</p>
-                                                <h2 class="heading-small">Exemption</h2>
-                        <p>(F) Pre-payment Certificate</p>
+
+
                                                 <h2 class="heading-small">DWP checked</h2>
                         <p>No</p>
-
-
-
-                    </div>
-                    <div class="column-one-third">
-
                         <h2 class="heading-small">Dispenser</h2>
                         <p>FRN15</p>
                                                                         <h2 class="heading-small">Evidence seen?</h2>
                         <p>No</p>
+                    </div>
+                    <div class="column-one-third">
 
+
+
+                                                                        <h2 class="heading-small">Items</h2>
+                        <p>1</p>
                                                                                                <h2 class="heading-small">Prescribed date</h2>
                         <p>28/06/2017</p>
                         <h2 class="heading-small">Dispensed month end date</h2>
                         <p>28/07/2017</p>
+
+
+                                                                                                <h2 class="heading-small">Exemption</h2>
+                        <p>(F) Pre-payment Certificate</p>
                     </div>
                     <div class="column-full rpads">
                     <div class="container rpads">
@@ -215,22 +225,34 @@
                                 <th>Date</th>
                                 <th>User</th> 
                                 <th>Amount</th>
+                                    <th>For</th>
                                 <th>Type</th>
                               </tr>
                                     </thead>
                                 <tbody>
-                              <tr>
-                                <td>28/05/2017</td>
-                                <td>System</td> 
-                                <td>£58.60</td>
-                                  <td>Payment request</td>
-                              </tr>
-                              <tr>
-                                <td>28/06/2017</td>
+                                                                                                      <tr>
+                                <td>27/07/2017 13.30</td>
                                 <td>System</td> 
                                 <td>£51</td>
+                                                                                                          <td>PCN</td>
+                                  <td>Cheque</td>
+                              </tr>
+                                                                  <tr>
+                                <td>27/07/2017 13.30</td>
+                                <td>System</td> 
+                                <td>£51</td>
+                                                                      <td>Surcharge</td>
                                   <td>Surcharge added</td>
                               </tr>
+                              <tr>
+                                <td>27/07/2017 13.30</td>
+                                <td>System</td> 
+                                <td>£58.60</td>
+                                  <td>PCN</td>
+                                  <td>Payment request</td>
+                              </tr>
+
+                                    
                                 </tbody>
                             </table>
                             </div>
