@@ -1,0 +1,57 @@
+{% extends "layout_bsa_popup.html" %}
+
+{% block page_title %}
+  Single User View
+{% endblock %}
+
+{% block after_header %}
+
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+    <div class="grid-row">
+        
+        <div class="column-full highlight1">
+
+
+            
+            <form action="results" method="get" class="form">
+                            
+                <div class="form-group">
+  <fieldset class="inline">
+
+    <legend>
+      <h1 class="heading-large">
+        Do want to save your changes?
+      </h1>
+    </legend>
+
+    <div class="multiple-choice">
+      <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
+      <label for="radio-inline-1">Yes</label>
+    </div>
+    <div class="multiple-choice">
+      <input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">
+      <label for="radio-inline-2">No</label>
+    </div>
+
+  </fieldset>
+</div>
+        
+        <br>
+        
+        <div class="form-item-wrapper">
+          <div class="form-group">
+            <input class="button" onclick="JavaScript:window.close()" type="submit" value="Next">
+          </div>
+        </div>
+ </form>
+        <p class="navigation"><a class="cancel" href="JavaScript:window.close()">Cancel (return to record)</a></p>
+
+        </div>
+    </div>
+</main>
+
+{% endblock %}
