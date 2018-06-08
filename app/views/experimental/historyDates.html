@@ -1,0 +1,49 @@
+{% extends "layout_bsa_popup.html" %}
+
+{% block page_title %}
+  Single User View
+{% endblock %}
+
+
+
+{% block after_header %}
+
+
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+    <div class="grid-row">
+        
+        <div class="column-full highlight1">
+
+            <h1 class="heading-large">History: personal details</h1>
+            
+            <form action="tabs-below" method="get" class="form">
+
+          <ul class="list list-bullet">
+
+    <li><a href="history">Original</a></li>
+              <li><a href="history2">27/07/2017</a></li>
+  </ul>    
+        <br>
+<!--
+        <div class="form-item-wrapper">
+          <div class="form-group">
+            <input class="button" onclick="JavaScript:window.close()" type="submit" value="Close">
+          </div>
+        </div>
+-->
+
+        <p class="navigation"><a class="cancel" href="JavaScript:window.close()">Close</a></p>
+        
+      </form>
+
+            
+
+        </div>
+    </div>
+</main>
+
+{% endblock %}
