@@ -18,11 +18,25 @@
             <h1 class="heading-large">Unlock penalty</h1>
             
             <form action="tabs-below" method="get" class="form">
-
-        <div class="form-group">
+                
+                                        <div class="form-group">
 <label class="form-label">Reason for unlocking</label>
             <br>
-          <div style="width: 500px;">                      <textarea style="height: 150px; width:100%;"></textarea>             <p style="text-align: right;">0/2048</p>              </div>
+            
+              <select class="form-control" name="select-box">
+      <option selected hidden></option>
+    <option>Locked Accidentally</option>
+    <option>Other</option>
+  </select>
+        </div>
+
+        <div class="form-group">
+<label class="form-label">Notes</label>
+            <br>
+          <div style="width: 500px;">
+                     <textarea style="height: 150px; width:100%;"></textarea>
+            <p style="text-align: right;">0/2048</p> 
+            </div>
         </div>
         
         <br>

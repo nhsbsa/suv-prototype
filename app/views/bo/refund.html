@@ -24,7 +24,20 @@
             
 <form action="JavaScript:window.close()" method="get" class="form">
 
-        <div class="form-group">
+                    <div class="form-group">
+            <label class="form-label">Transaction type</label>
+            <br>
+  <select class="form-control" name="select-box">
+    <option selected="" hidden=""></option>
+      <option>Cheque</option>
+    <option>Postal order</option>
+    <option>Bank transfer</option>
+  </select>
+                   <br>
+        <br>
+        </div>     
+    
+    <div class="form-group">
             <label class="form-label">Amount to refund</label>
             <br>
             <span style="font-weight: 700">£</span>
@@ -39,6 +52,7 @@
         
         <div class="form-item-wrapper">
           <div class="form-group">
+              <br>
             <input class="button" type="submit" value="Submit">
           </div>
         </div>

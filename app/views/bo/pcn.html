@@ -19,29 +19,7 @@
             </li>
             <li>
             <div class="form-group">
-              <select class="form-control" id="select-box" name="select-box" onchange="location = this.value;">
-                <option selected hidden>Close</option>
-                  <div>
-                <option value="">Exemp confirmed: Incorrect forename</option>
-                  <option value="">Exemp confirmed: Incorrect surname</option>
-                <option value="">Exemp confirmed: Incorrect address</option>
-                      <option value="">Exemp confirmed: Incorrect postcode</option>
-                      <option value="">Exemp confirmed: Incorrect date of birth</option>
-                      <option value="">Mismatched exemption category</option>
-                      <option value="">Dead letter office return</option>
-                      <option value="">Letter returned</option>
-                      <option value="">Patient paid</option>
-                      <option value="">Data capture - Keying error</option>
-                      <option value="">Patient deceased</option>
-                      <option value="">MEDEX/MATEX Ex Gratia payment processed</option>
-                      <option value="">Refund processed</option>
-                      <option value="">Exemp confirmed: Supported by NASS</option>
-                      <option value="">Now in Letter Before Action Process</option>
-                      <option value="">Universal Credit Closure</option>
-                      <option value="">Full payment received</option>
-                      <option value="">Signed declaration</option>
-                    </div>
-              </select>
+                <a class="menu-button" href="close" onClick="MyWindow=window.open('close','MyWindow','width=645,height=600'); return false;">Close</a>
             </div>
             </li>
           </ul>
@@ -137,6 +115,7 @@
                               <thead>
                                 <tr>
                                     <th>Reference</th>
+                                    <th>Letter type</th>
                                     <th>Sent</th>
                                     <th>Respond</th>
                                     <th>Balance</th>
@@ -147,6 +126,7 @@
                               <tbody>
                                 <tr>
                                     <td><a href="#">223456789</a></td>
+                                    <td>PCN</td>
                                     <td>28/5/17</td>
                                     <td>28/6/17</td>
                                     <td>£108.60</td>
@@ -155,10 +135,11 @@
                                 </tr>
                                 <tr>
                                     <td><a href="#">323456789</a></td>
+                                    <td>SUR</td>
                                     <td>28/4/17</td>
                                     <td>28/5/17</td>
                                     <td>£108.60</td>
-                                    <td>Closed: Exemption confirmed</td>
+                                    <td>Closed</td>
 
                                 </tr>
                                   </tbody>
@@ -283,15 +264,25 @@
                                 <th>Amount</th>
                                     <th>For</th>
                                 <th>Type</th>
+                                    <th></th>
                               </tr>
                                     </thead>
                                 <tbody>
                                                                                                       <tr>
                                 <td>27/07/2017 13.30</td>
                                 <td>System</td> 
-                                <td>£51</td>
-                                                                                                          <td>PCN</td>
-                                  <td>Cheque</td>
+                                <td>-£51</td>
+                                                                                                          <td>Surcharge</td>
+                                  <td>Surcharge eased</td>
+                                                                                                          <td><a href="" onClick="MyWindow=window.open('removeEasment','MyWindow','width=700,height=500'); return false;">Remove easement</a></td>
+                              </tr>
+                                                                                                      <tr>
+                                <td>27/07/2017 13.30</td>
+                                <td>System</td> 
+                                <td>£15</td>
+                                                                      <td>Payment</td>
+                                  <td>Cheque payment</td>
+                                                                      <td><a href="" onClick="MyWindow=window.open('payRefund','MyWindow','width=700,height=500'); return false;">Process refund</a></td>
                               </tr>
                                                                   <tr>
                                 <td>27/07/2017 13.30</td>
@@ -299,6 +290,7 @@
                                 <td>£51</td>
                                                                       <td>Surcharge</td>
                                   <td>Surcharge added</td>
+                                                                      <td></td>
                               </tr>
                               <tr>
                                 <td>27/07/2017 13.30</td>
@@ -306,16 +298,25 @@
                                 <td>£58.60</td>
                                   <td>PCN</td>
                                   <td>Payment request</td>
+                                  <td></td>
                               </tr>
 
                                     
                                 </tbody>
                             </table>
                             </div>
-                                                        <br>                                                                     
-                            <p><a href="" onClick="MyWindow=window.open('easement','MyWindow','width=600,height=600'); return false;">Add easment</a></p>
-                            <p><a href="transfer" onClick="MyWindow=window.open('transfer','MyWindow','width=600,height=500'); return false;">Process balance transfer</a></p>
+                            <br>
+                            <div class="column-half bo-tools">
+                                                                                        <p><a href="" onClick="MyWindow=window.open('newTrans','MyWindow','width=600,height=600'); return false;">Add payment</a></p>
+                                                        <p><a href="" onClick="MyWindow=window.open('easement','MyWindow','width=600,height=600'); return false;">Add easment</a></p>
+                            </div>
+                            <div class="column-half">
+                                                        <p><a href="transfer" onClick="MyWindow=window.open('transfer','MyWindow','width=600,height=500'); return false;">Process balance transfer</a></p>
                             <p><a href="refund" onClick="MyWindow=window.open('refund','MyWindow','width=600,height=400'); return false;">Process refund</a></p>
+                            </div>
+                                                                                                                             
+
+
                         </div>
                         <div id="tab-2" class="tab1-content current1">    
                             <div class="makeScrollable1">

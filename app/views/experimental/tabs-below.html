@@ -22,26 +22,7 @@
             </li>
             <li>
             <div class="form-group">
-              <select class="form-control" id="select-box" name="select-box" onchange="location = this.value;">
-                <option selected hidden>Close</option>
-                  <div>
-                <option value="">Exemp confirmed: Incorrect forename</option>
-                  <option value="">Exemp confirmed: Incorrect surname</option>
-                <option value="">Exemp confirmed: Incorrect address</option>
-                      <option value="">Exemp confirmed: Incorrect postcode</option>
-                      <option value="">Exemp confirmed: Incorrect date of birth</option>
-                      <option value="">Mismatched exemption category</option>
-                      <option value="">Dead letter office return</option>
-                      <option value="">Letter returned</option>
-                      <option value="">Patient paid</option>
-                      <option value="">Data capture - Keying error</option>
-                      <option value="">Patient deceased</option>
-                      <option value="">MEDEX/MATEX Ex Gratia payment processed</option>
-                      <option value="">Refund processed</option>
-                      <option value="">Exemption confirmed</option>
-                      <option value="">Full payment received</option><option value="">Universal Credit Closure</option><option value="">Signed declaration</option>
-                    </div>
-              </select>
+                <a class="menu-button" href="close" onClick="MyWindow=window.open('close','MyWindow','width=645,height=600'); return false;">Close</a>
             </div>
             </li>
 
@@ -138,6 +119,7 @@
                               <thead>
                                 <tr>
                                     <th>Reference</th>
+                                    <th>Letter type</th>
                                     <th>Sent</th>
                                     <th>Respond</th>
                                     <th>Balance</th>
@@ -148,6 +130,7 @@
                               <tbody>
                                 <tr>
                                     <td><a href="#">223456789</a></td>
+                                    <td>PCN</td>
                                     <td>28/5/17</td>
                                     <td>28/6/17</td>
                                     <td>£108.60</td>
@@ -156,10 +139,11 @@
                                 </tr>
                                 <tr>
                                     <td><a href="#">323456789</a></td>
+                                    <td>SUR</td>
                                     <td>28/4/17</td>
                                     <td>28/5/17</td>
                                     <td>£108.60</td>
-                                    <td>Closed: Exemption confirmed</td>
+                                    <td>Closed</td>
 
                                 </tr>
                                   </tbody>
