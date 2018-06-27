@@ -4,7 +4,10 @@
   Single User View
 {% endblock %}
 
+
+
 {% block after_header %}
+
 
 {% endblock %}
 
@@ -15,33 +18,12 @@
         
         <div class="column-full highlight1">
 
-            <h1 class="heading-large">Add easment</h1>
-            
+            <h1 class="heading-large">Close record</h1>
             
             <form action="tabs-below" method="get" class="form">
-
-
                 
-                            <div class="form-group">
-            <label class="form-label">Amount to ease</label>
-            <br>
-  <select class="form-control wide-dropdown" name="select-box">
-      <option selected hidden></option>
-    <option>Penalty charge</option>
-    <option>Surcharge</option>
-      <option>Penalty charge and surcharge</option>
-  </select>
-                                <br>
-                                <br>
-                                
-                                                                                    <p><span class="strong">Easment amount: £43</span></p>
-                                <p><span class="strong">Customer has paid: £0</span></p>
-            <p><span class="strong">Balance after easement applied: £8.60</span></p>
-       
-        </div>
-                                  
-                        <div class="form-group">
-<label class="form-label">Reason for easement</label>
+                                        <div class="form-group">
+<label class="form-label">Reason</label>
             <br>
             
               <select class="form-control wide-dropdown" name="select-box">
@@ -62,20 +44,22 @@
                   <option>More than one PCN in same month</option>
                   <option>PR form not signed</option>
   </select>
-<!--          <div style="width: 500px;">                      <textarea style="height: 150px; width:100%;"></textarea>             <p style="text-align: right;">0/2048</p>              </div>-->
+
         </div>
-                
-                                        <div class="form-group">
+
+        <div class="form-group">
 <label class="form-label">Notes</label>
-            <br>
-            
           <div style="width: 500px;">
                      <textarea style="height: 150px; width:100%;"></textarea>
             <p style="text-align: right;">0/2048</p> 
             </div>
         </div>
+                
+                <br>
         
         <br>
+                
+
         
         <div class="form-item-wrapper">
           <div class="form-group">
@@ -84,17 +68,12 @@
         </div>
 
         <p class="navigation"><a class="cancel" href="JavaScript:window.close()">Cancel</a></p>
-
-      </form>
-            
-            
-            
-       
-
-            
-
         
-    </div>
+      </form>
+
+            
+
+        </div>
     </div>
 </main>
 
