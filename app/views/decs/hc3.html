@@ -18,9 +18,34 @@
               <a class="menu-button" href="hold" onClick="MyWindow=window.open('hold','MyWindow','width=600,height=600'); return false;">Lock</a>
             </li>
             <li>
-            <div class="form-group">
                 <a class="menu-button" href="close" onClick="MyWindow=window.open('close','MyWindow','width=645,height=600'); return false;">Close</a>
-            </div>
+                <!--    
+                <div class="form-group">
+                  <select class="form-control" id="select-box" name="select-box" onchange="location = this.value;">
+                    <option selected hidden>Close</option>
+                      <div>
+                    <option value="">Exemp confirmed: Incorrect forename</option>
+                      <option value="">Exemp confirmed: Incorrect surname</option>
+                    <option value="">Exemp confirmed: Incorrect address</option>
+                          <option value="">Exemp confirmed: Incorrect postcode</option>
+                          <option value="">Exemp confirmed: Incorrect date of birth</option>
+                          <option value="">Mismatched exemption category</option>
+                          <option value="">Dead letter office return</option>
+                          <option value="">Letter returned</option>
+                          <option value="">Patient paid</option>
+                          <option value="">Data capture - Keying error</option>
+                          <option value="">Patient deceased</option>
+                          <option value="">MEDEX/MATEX Ex Gratia payment processed</option>
+                          <option value="">Refund processed</option>
+                          <option value="">Exemp confirmed: Supported by NASS</option>
+                          <option value="">Now in Letter Before Action Process</option>
+                          <option value="">Universal Credit Closure</option>
+                          <option value="">Full payment received</option>
+                          <option value="">Signed declaration</option>
+                        </div>
+                  </select>
+                </div>
+-->
             </li>
           </ul>
         </div>
@@ -62,9 +87,6 @@
                                                                         <h2 class="heading-small">Email</h2>
                         <input class="form-control" id="reference-number" name="first-name-2" type="text">
                         <p class="change-spacea"></p>
-                        <a href="" onClick="MyWindow=window.open('historyDates','MyWindow','width=650,height=635'); return false;">History of changes</a>
-                        <br>
-                        <br>
 <a class="button" id="search-button" href="" role="button">Save</a>
                                             <br>
                     <br>
@@ -89,9 +111,7 @@
                         <h2 class="heading-small">Telephone</h2>
                         <input class="form-control" id="reference-number" name="first-name-2" type="text">
                         <p class="change-spacea"></p>
-                        <a></a>
-                        <br>
-                        <br>
+
 <a class="button reset-button" id="search-button" href="" role="button">Reset</a>
                     <br>
                     <br>
@@ -107,10 +127,9 @@
                             <li class="tab-link current" data-tab="tab-3">Matches</li>
                             <li class="tab-link" data-tab="tab-4">Possible matches</li>
                         </ul>
-
-
-                        <div id="tab-3" class="tab-content current">
-                            <div class="makeScrollable2Mvp">
+                        
+                                                <div id="tab-3" class="tab-content current">
+                            <div class="makeScrollable2">
                           <table class="internal2-table">
                               <thead>
                                 <tr>
@@ -124,31 +143,14 @@
                                 </tr>
                             </thead>
                               <tbody>
-                                <tr>
-                                    <td><a href="#">223456789</a></td>
-                                    <td>PCN</td>
-                                    <td>28/5/17</td>
-                                    <td>28/6/17</td>
-                                    <td>£108.60</td>
-                                    <td>Open</td>
 
-                                </tr>
-                                <tr>
-                                    <td><a href="#">323456789</a></td>
-                                    <td>SUR</td>
-                                    <td>28/4/17</td>
-                                    <td>28/5/17</td>
-                                    <td>£108.60</td>
-                                    <td>Closed</td>
-
-                                </tr>
                                   </tbody>
                             </table>
                             </div>
                         </div>
                         
                         <div id="tab-4" class="tab-content">
-                            <div class="makeScrollable2Mvp">
+                            <div class="makeScrollable2">
                           <table class="internal-table">
                                 <thead>
                                 <tr>
@@ -160,34 +162,7 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <tr>
-                                    <td><a href="#">823456789</a></td>
-                                    <td>Joe Bloggs</td> 
-                                    <td>9 Hotspur street, Townford</td>
-                                    <td>NE1 0LD</td>
-                                    <td>Open</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="#">423456789</a></td>
-                                    <td>Joe J Bloggs</td> 
-                                    <td>9 Hotspur street, Townford</td>
-                                    <td>NE1 0LD</td>
-                                    <td>Open</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="#">523456789</a></td>
-                                    <td>Joe Bloggs</td> 
-                                    <td>17 Trump street, Townford</td>
-                                    <td>NE1 5LD</td>
-                                    <td>Open</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="#">623456789</a></td>
-                                    <td>Laura Hartford</td> 
-                                    <td>9 Hotspur street, Townford</td>
-                                    <td>NE1 0LD</td>
-                                    <td>Open</td>
-                                </tr>
+
                                 </tbody>
                             </table>
                             </div>
@@ -200,10 +175,9 @@
                     <h1 class="heading-medium">PCN 123456789: Open</h1>
                     <div class="column-one-third lpads">
                         <h2 class="heading-small">Dental charge</h2>
-                        <p>£8.60</p>
-                                                                                                                       
+                        <p>£59.10</p>                                                                                         
                         <h2 class="heading-small">Penalty</h2>
-                        <p>£50</p>
+                        <p>£100</p>
                         <h2 class="heading-small">Surcharge</h2>
                         <p>£51</p>
                                                 <h2 class="heading-small">Requested</h2>
@@ -212,7 +186,7 @@
                         <h2 class="heading-small">Paid</h2>
                         <p>£0</p>
                                                                         <h2 class="heading-small">HC3 amount</h2>
-                        <p>No HC3</p>
+                        <p>£30</p>
                                                                         <h2 class="heading-small">charge received</h2>
                         <p>£0</p>
 
@@ -256,10 +230,11 @@
                         <h2 class="heading-small">Treatment end</h2>
                         <p>13/04/2017</p>
                         <h2 class="heading-small">Exemption</h2>
-                        <p>Universal Credit certificate (Box ‘P’)</p>
+                        <p>HC3 certificate - limited help with health costs</p>
 
 
                     </div>
+                    
                     <div class="column-full rpads">
                     <div class="container rpads">
                         <ul class="tabs1 rpads">
@@ -267,7 +242,7 @@
                             <li class="tab-link" data-tab1="tab-1">Transactions</li>
                         </ul>
                         <div id="tab-1" class="tab1-content rpads">
-                            <div class="makeScrollable1Mvp">
+                            <div class="makeScrollable1">
                             <table class="internal-table">
                                 <thead>  
                                 <tr>
@@ -286,15 +261,7 @@
                                 <td>-£51</td>
                                                                                                           <td>Surcharge</td>
                                   <td>Surcharge eased</td>
-                                                                                                          <td><a href="" onClick="MyWindow=window.open('removeEasment','MyWindow','width=700,height=550'); return false;">Remove easement</a></td>
-                              </tr>
-                                                                                                      <tr>
-                                <td>27/07/2017 13.30</td>
-                                <td>System</td> 
-                                <td>£15</td>
-                                                                      <td>Payment</td>
-                                  <td>Cheque payment</td>
-                                                                      <td><a href="" onClick="MyWindow=window.open('payRefund','MyWindow','width=700,height=500'); return false;">Process refund</a></td>
+                                                                                                          <td><a href="" onClick="MyWindow=window.open('removeEasment','MyWindow','width=700,height=500'); return false;">Remove easement</a></td>
                               </tr>
                                                                   <tr>
                                 <td>27/07/2017 13.30</td>
@@ -317,21 +284,12 @@
                                 </tbody>
                             </table>
                             </div>
-                            <br>
-                            <div class="column-half bo-tools">
-                                                                                        <p><a href="" onClick="MyWindow=window.open('newTrans','MyWindow','width=600,height=600'); return false;">Add payment</a></p>
-                                                        <p><a href="" onClick="MyWindow=window.open('easement','MyWindow','width=600,height=740'); return false;">Add easment</a></p>
-                            </div>
-                            <div class="column-half">
-                                                        <p><a href="transfer" onClick="MyWindow=window.open('transfer','MyWindow','width=600,height=645'); return false;">Process balance transfer</a></p>
-                            <p><a href="refund" onClick="MyWindow=window.open('refund','MyWindow','width=600,height=450'); return false;">Process refund</a></p>
-                            </div>
-                                                                                                                             
-
-
+                                                        <br>
+                            <p><a href="" onClick="MyWindow=window.open('easement','MyWindow','width=643,height=810'); return false;">Add easment</a></p>
+                                                        <br>
                         </div>
                         <div id="tab-2" class="tab1-content current1">    
-                            <div class="makeScrollable1Mvp">
+                            <div class="makeScrollable1">
                             <table class="notes-table">
                                 <thead>
                                   <tr>
@@ -343,53 +301,19 @@
                                 
                                 <tbody>
                                     <div>
-                              <tr>
-                                <td>27/07/2017 13.00</td>
-                                <td>Tim</td> 
-                                <td>Cust told pay half to avoid surcharge. Cust non compliant, demanded manager. Call escalated</td>
-                              </tr>
-                            <tr>
-                                <td>27/07/2017 13.30</td>
-                                <td>Joanne</td> 
-                                <td>Info repeated as above. Cust paid half, agreed to pay next half 27/08/17</td>
-                              </tr>
-                                                              <tr>
-                                <td>27/07/2017 13.00</td>
-                                <td>Tim</td> 
-                                <td>Cust told pay half to avoid surcharge. Cust non compliant, demanded manager. Call escalated</td>
-                              </tr>
-                                                            <tr>
-                                <td>27/07/2017 13.30</td>
-                                <td>Joanne</td> 
-                                <td>Info repeated as above. Cust paid half, agreed to pay next half 27/08/17</td>
-                              </tr>
-                                                                                                    <tr>
-                                <td>27/07/2017 13.30</td>
-                                <td>Joanne</td> 
-                                <td>Info repeated as above. Cust paid half, agreed to pay next half 27/08/17</td>
-                              </tr>
-                                                                                                    <tr>
-                                <td>27/07/2017 13.30</td>
-                                <td>Joanne</td> 
-                                <td>Info repeated as above. Cust paid half, agreed to pay next half 27/08/17</td>
-                              </tr>
+
                                         </div>
                                 </tbody>
-                                    
                             </table>
                             </div>
                             <br>
-                            <p><a href="addNote" onClick="MyWindow=window.open('addNote','MyWindow','width=600,height=475'); return false;">+ Add note</a></p>
-                                
+                            <p><a href="addNote" onClick="MyWindow=window.open('addNote','MyWindow','width=600,height=450'); return false;">+ Add note</a></p>
                             <br>
                         </div>
-
                     </div>
                 </div>
-                </div>
-                
-            </div>
-            
+                </div>  
+            </div>  
         </div>
     </div>
 </main>
