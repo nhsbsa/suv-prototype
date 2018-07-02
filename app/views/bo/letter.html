@@ -4,7 +4,10 @@
   Single User View
 {% endblock %}
 
+
+
 {% block after_header %}
+
 
 {% endblock %}
 
@@ -15,27 +18,33 @@
         
         <div class="column-full highlight1">
 
-            <h1 class="heading-large">Remove Easment</h1>
+            <h1 class="heading-large">Create letter</h1>
             
             <br>
             
-            <form action="tabs-below" method="get" class="form">
-                            
-                                        <div class="form-group">
-<label class="form-label">Reason</label>
+<form action="JavaScript:window.close()" method="get" class="form">
+
+                <div class="form-group">
+            <label class="form-label">Letter type</label>
             <br>
-            
-          <div style="width: 500px;">
-                     <textarea style="height: 150px; width:100%;"></textarea>
-            <p style="text-align: right;">0/2048</p> 
-            </div>
-        </div>
-        
+  <select class="form-control wide-dropdown" name="select-box">
+    <option selected="" hidden=""></option>
+      <option>Surcharge letter</option>
+    <option>Instalment letter</option>
+    <option>Surcharge letter</option>
+  </select>
+                   <br>
+        <br>
+        </div>    
+    
+
+
+        <br>
         <br>
         
         <div class="form-item-wrapper">
           <div class="form-group">
-            <input class="button" onclick="JavaScript:window.close()" type="submit" value="Submit">
+            <input class="button" type="submit" value="Submit">
           </div>
         </div>
 
@@ -43,10 +52,7 @@
         
       </form>
             
-            
-            
-        
-
+            <br>
             
 
         </div>
