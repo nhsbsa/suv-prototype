@@ -1,0 +1,335 @@
+{% extends "layout_bsa_internal.html" %}
+
+{% block page_title %}
+  Single User View
+{% endblock %}
+
+{% block after_header %}
+  <div id="menu">
+    <div id="menu-content">
+      <div class="grid-row">
+        <div class="column-half">
+          <ul>
+            <li>
+              <a class="menu-button" href="results">Back to search</a>
+            </li>
+
+                          <li>
+              <a class="menu-button" href="hold" onClick="MyWindow=window.open('hold','MyWindow','width=600,height=600'); return false;">Lock</a>
+            </li>
+            <li>
+                <a class="menu-button" href="close" onClick="MyWindow=window.open('close','MyWindow','width=645,height=600'); return false;">Close</a>
+            </li>
+          </ul>
+        </div>
+        <div class="column-half" id="logout">
+          <a href="#">Sign out</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+    <div class="grid-row">
+        
+        <div class="column-full">
+                        <div class="column-one-third det-width2">
+                <div class="grid-row highlight1">
+                    <br>
+                    <div class="column-half lpads">
+                                                <h2 class="heading-small">Title</h2>
+                        <input class="form-control" id="reference-number" name="first-name-2" type="text" value="Mr">
+                        <p class="change-spacea"></p>
+                                                                                                <h2 class="heading-small">Forename</h2>
+                        <input class="form-control" id="reference-number" name="first-name-2" type="text" value="Joe">
+                        <p class="change-spacea"></p>
+                                                                        <h2 class="heading-small">Surname</h2>
+                        <input class="form-control" id="reference-number" name="first-name-2" type="text" value="Bloggs">
+                        <p class="change-spacea"></p>
+
+                                                                        <h2 class="heading-small">D.O.B.</h2>
+                        <input class="form-control" id="reference-number" name="first-name-2" type="text" value="20/11/1988">
+                        <p class="change-spacea"></p>
+                        <h2 class="heading-small">NHS No.</h2>
+                        <input class="form-control" id="reference-number" name="first-name-2" type="text" value="20111988">
+                        <p class="change-spacea"></p>
+                                                                        <h2 class="heading-small">Email</h2>
+                        <input class="form-control" id="reference-number" name="first-name-2" type="text">
+                        <p class="change-spacea"></p>
+<a class="button" id="search-button" href="" role="button">Save</a>
+                                            <br>
+                    <br>
+                    </div>
+                    <div class="column-half">
+                        
+                                                                        <h2 class="heading-small">Address line 1</h2>
+                        <input class="form-control" id="reference-number" name="first-name-2" type="text" value="9 Hotspur street">
+                        <p class="change-spacea"></p>
+                                                                        <h2 class="heading-small">Address line 2</h2>
+                        <input class="form-control" id="reference-number" name="first-name-2" type="text" value="Townford">
+                        <p class="change-spacea"></p>
+                                                                                                <h2 class="heading-small">Address line 3</h2>
+                        <input class="form-control" id="reference-number" name="first-name-2" type="text" value="">
+                        <p class="change-spacea"></p>
+                                                                        <h2 class="heading-small">Address line 4</h2>
+                        <input class="form-control" id="reference-number" name="first-name-2" type="text" value="">
+                        <p class="change-spacea"></p>
+                                                                                            <h2 class="heading-small">Postcode</h2>
+                        <input class="form-control" id="reference-number" name="first-name-2" type="text" value="NE1 0LD">
+                        <p class="change-spacea"></p>
+                        <h2 class="heading-small">Telephone</h2>
+                        <input class="form-control" id="reference-number" name="first-name-2" type="text">
+                        <p class="change-spacea"></p>
+
+<a class="button reset-button" id="search-button" href="" role="button">Reset</a>
+                    <br>
+                    <br>
+                    </div>
+                    
+
+                </div>
+
+                <br>
+                <div class="column-full rpads">
+                    <div class="container rpads">
+                        <ul class="tabs rpads">
+                            <li class="tab-link current" data-tab="tab-3">Matches</li>
+                            <li class="tab-link" data-tab="tab-4">Possible matches</li>
+                        </ul>
+
+
+                        <div id="tab-3" class="tab-content current">
+                            <div class="makeScrollable2">
+                          <table class="internal2-table">
+                              <thead>
+                                <tr>
+                                    <th>Reference</th>
+                                    <th>Letter type</th>
+                                    <th>Sent</th>
+                                    <th>Respond</th>
+                                    <th>Balance</th>
+                                    <th>Status</th>
+
+                                </tr>
+                            </thead>
+                              <tbody>
+                                <tr>
+                                    <td><a href="#">223456789</a></td>
+                                    <td>PCN</td>
+                                    <td>28/5/17</td>
+                                    <td>28/6/17</td>
+                                    <td>£108.60</td>
+                                    <td>Open</td>
+
+                                </tr>
+                                <tr>
+                                    <td><a href="#">323456789</a></td>
+                                    <td>SUR</td>
+                                    <td>28/4/17</td>
+                                    <td>28/5/17</td>
+                                    <td>£108.60</td>
+                                    <td>Closed</td>
+
+                                </tr>
+                                  </tbody>
+                            </table>
+                            </div>
+                        </div>
+                        
+                        <div id="tab-4" class="tab-content">
+                            <div class="makeScrollable2">
+                          <table class="internal-table">
+                                <thead>
+                                <tr>
+                                    <th>Reference</th>
+                                    <th>Name</th> 
+                                    <th>Address</th>
+                                    <th>Postcode</th>
+                                    <th>Status</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td><a href="#">823456789</a></td>
+                                    <td>Joe Bloggs</td> 
+                                    <td>9 Hotspur street, Townford</td>
+                                    <td>NE1 0LD</td>
+                                    <td>Open</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">423456789</a></td>
+                                    <td>Joe J Bloggs</td> 
+                                    <td>9 Hotspur street, Townford</td>
+                                    <td>NE1 0LD</td>
+                                    <td>Open</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">523456789</a></td>
+                                    <td>Joe Bloggs</td> 
+                                    <td>17 Trump street, Townford</td>
+                                    <td>NE1 5LD</td>
+                                    <td>Locked</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">623456789</a></td>
+                                    <td>Laura Hartford</td> 
+                                    <td>9 Hotspur street, Townford</td>
+                                    <td>NE1 0LD</td>
+                                    <td>Closed</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>                                
+            </div>
+            <div class="column-one-third lpads det-width3">
+                <div class="grid-row highlight1">
+                    <h1 class="heading-medium">PCN 123456789: Closed</h1>
+                    <p><a href="/public/images/prototypes/1/prescription-nhs.png" onClick="MyWindow=window.open('/public/images/prototypes/1/prescription-nhs.png','MyWindow','width=600,height=550'); return false;">View prescription</a></p>
+                    <div class="column-one-third lpads">
+
+                        <h2 class="heading-small">Prescription</h2>
+                        <p>£8.60</p>
+                        <h2 class="heading-small">Penalty</h2>
+                        <p>£0</p>
+                        <h2 class="heading-small">Surcharge</h2>
+                        <p>£0</p>
+                                                <h2 class="heading-small">Requested</h2>
+                        <p>£8.60</p>
+                        <h2 class="heading-small">Paid</h2>
+                        <p>£8.60</p>
+                                                                                                <h2 class="heading-small">Balance due</h2>
+                        <p>£0</p>
+
+                    </div>
+                    <div class="column-one-third">
+
+
+                        <h2 class="heading-small">PCN sent</h2>
+                        <p>28/06/2017</p>
+                                                <h2 class="heading-small">Surcharge sent</h2>
+                        <p>28/06/2017</p>
+                        <h2 class="heading-small">Respond by</h2>
+                        <p>28/07/2017</p>
+
+
+                                                <h2 class="heading-small">DWP checked</h2>
+                        <p>No</p>
+                        <h2 class="heading-small">Dispenser</h2>
+                        <p>FRN15</p>
+                                                                        <h2 class="heading-small">Evidence not seen?</h2>
+                        <p>No</p>
+                    </div>
+                    <div class="column-one-third">
+
+
+
+                                                                        <h2 class="heading-small">Items</h2>
+                        <p>1</p>
+                                                                                               <h2 class="heading-small">Prescribed date</h2>
+                        <p>28/06/2017</p>
+                        <h2 class="heading-small">Dispensed month end date</h2>
+                        <p>28/07/2017</p>
+
+
+                                                                                                <h2 class="heading-small">Exemption</h2>
+                        <p>(F) Prepayment Certificate</p>
+                    </div>
+                    <div class="column-full rpads">
+                    <div class="container rpads">
+                        <ul class="tabs1 rpads">
+                                                        <li class="tab-link current1" data-tab1="tab-2">Notes</li>
+                            <li class="tab-link" data-tab1="tab-1">Transactions</li>
+                        </ul>
+                        <div id="tab-1" class="tab1-content rpads">
+                            <div class="makeScrollable1">
+                            <table class="internal-table">
+                                <thead>  
+                                <tr>
+                                <th>Date</th>
+                                <th>User</th> 
+                                <th>Amount</th>
+                                    <th>For</th>
+                                <th>Type</th>
+                                    <th></th>
+                              </tr>
+                                    </thead>
+                                <tbody>
+                              <tr>
+                                <td>13/07/2018 09.00</td>
+                                <td>System</td> 
+                                <td>£51.60</td>
+                                  <td>PCN</td>
+                                  <td>Payment request</td>
+                                  <td></td>
+                              </tr>
+                              <tr>
+                                <td>16/07/2018 11.34</td>
+                                <td>SIRUD</td> 
+                                <td>-£43</td>
+                                  <td>PCN</td>
+                                  <td>Penalty eased</td>
+                                  <td></td>
+                              </tr>
+                              <tr>
+                                <td>16/07/2018 11.50</td>
+                                <td>System</td> 
+                                <td>£8.60</td>
+                                  <td>PCN</td>
+                                  <td>Credit card</td>
+                                  <td></td>
+                              </tr>
+                                    
+                                </tbody>
+                            </table>
+                            </div>
+                                                        <br>
+                            <p><a href="" onClick="MyWindow=window.open('easement','MyWindow','width=643,height=810'); return false;">Add easment</a></p>
+                                                        <br>
+                        </div>
+                        <div id="tab-2" class="tab1-content current1">    
+                            <div class="makeScrollable1">
+                            <table class="notes-table">
+                                <thead>
+                                  <tr>
+                                <th>Date</th>
+                                <th>Agent</th> 
+                                <th>Comments</th>
+                              </tr>
+                                </thead>
+                                
+                                <tbody>
+                                    <div>
+                                                                      <tr>
+                                <td>16/07/2018 11.34</td>
+                                <td>SIRUD</td> 
+                                <td>EASEMENT APPLIED **ES EXTREME SITUATION/TEAM MANAGER DISCRETION</td>
+                              </tr>
+                                        </div>
+                                </tbody>
+                                    
+                            </table>
+                            </div>
+                            <br>
+                            <p><a href="addNote" onClick="MyWindow=window.open('addNote','MyWindow','width=650,height=530'); return false;">+ Add note</a></p>
+                                
+                            <br>
+                        </div>
+
+                    </div>
+                </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+</main>
+
+{% endblock %}
