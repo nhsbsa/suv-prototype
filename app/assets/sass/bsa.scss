@@ -42,14 +42,13 @@ select.form-control{
 
 #reference-number {
   height: 30px;
-  margin-bottom: 3px;
   border: 2px solid grey;
     width: 100%;
 }
 
 //fonts
 p, td, internal-table td, li {
-  font-size: 16px;
+  font-size: 13px;
   color: #333333;
 }
 
@@ -1278,6 +1277,7 @@ div.tab1 button.active {
 
 .form-control{
     width: 25%;
+    font-size: 13px;
 }
 
 .lpads{
@@ -1318,8 +1318,13 @@ div.tab1 button.active {
     line-height: 1.31579;
 }
 
+.heading-medium{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
 table th, table td {
-    font-size: 16px;
+    font-size: 13px;
     line-height: 1.31579;
 }
 
