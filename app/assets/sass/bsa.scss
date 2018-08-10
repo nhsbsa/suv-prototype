@@ -48,7 +48,7 @@ select.form-control{
 
 //fonts
 p, td, internal-table td, li {
-  font-size: 13px;
+  font-size: 14px;
   color: #333333;
 }
 
@@ -1466,4 +1466,8 @@ select > option {
 
 .bo-tools{
     padding: 0 0 0 0;
+}
+
+.error-message{
+    font-size: 14px;
 }
