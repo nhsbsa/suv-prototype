@@ -1,0 +1,131 @@
+{% extends "layout_bsa_popup.html" %}
+
+{% block page_title %}
+  Single User View
+{% endblock %}
+
+
+
+{% block after_header %}
+
+
+{% endblock %}
+
+{% block content %}
+
+
+
+
+<main id="content" role="main">
+
+    <div class="grid-row">
+        
+        <div class="column-full highlight1">
+            
+            <h1 class="heading-large">Edit transaction</h1>
+            
+            <select class="form-control" name="select-box" id="size_select">
+                <option value="option1">Change amount</option>
+                <option value="option2">Process refund</option>
+            </select>
+            
+            <br>
+            <br>
+            
+            <div id="option1" class="size_chart">
+                <h1 class="heading-medium">Change amount</h1>
+                <br>
+<form action="JavaScript:window.close()" method="get" class="form">
+
+                <div class="form-group">
+            <label class="form-label">Payment type</label>
+            <br>
+  <select class="form-control" name="select-box">
+    <option selected="" hidden=""></option>
+      <option selected>Cheque</option>
+    <option>Postal order</option>
+    <option>Bank transfer</option>
+  </select>
+                   <br>
+        <br>
+        </div>    
+    
+    <div class="form-group">
+            <label class="form-label">Payment amount</label>
+            <br>
+            <span style="font-weight: 700">£</span>
+          <input class="form-control form-control-1-8" id="form-control-1-8" type="text" name="form-control-1-8" value="15">
+                   <br>
+        <br>
+        </div>
+    
+                                        <div class="form-group">
+<label class="form-label">Notes</label>
+            <br>
+            
+          <div style="width: 500px;">
+                     <textarea style="height: 150px; width:100%;"></textarea>
+            <p style="text-align: right;">0/2048</p> 
+            </div>
+        </div>
+        <br>
+        <br>
+        
+        <div class="form-item-wrapper">
+          <div class="form-group">
+            <input class="button" type="submit" value="Submit">
+          </div>
+        </div>
+
+        <p class="navigation"><a class="cancel" href="JavaScript:window.close()">Cancel</a></p>
+        
+      </form>
+            
+            <br>
+            </div>
+            
+            <div id="option2" class="size_chart">
+                <h1 class="heading-medium">Process refund</h1>
+                <br>
+                    <form action="JavaScript:window.close()" method="get" class="form">
+                            <div class="form-group">
+            <label class="form-label">Refund amount</label>
+            <br>
+            <span style="font-weight: 700">£</span>
+          <input class="form-control form-control-1-8" id="form-control-1-8" type="text" name="form-control-1-8" value="15">
+                   <br>
+        <br>
+        </div>
+    
+                                        <div class="form-group">
+<label class="form-label">Notes</label>
+            <br>
+            
+          <div style="width: 500px;">
+                     <textarea style="height: 150px; width:100%;"></textarea>
+            <p style="text-align: right;">0/2048</p> 
+            </div>
+        </div>
+        <br>
+        <br>
+                        <br>
+                        <br>
+                        <div class="form-item-wrapper">
+                        <div class="form-group">
+                        <input class="button" type="submit" value="Submit">
+                        </div>
+                        </div>
+                        <p class="navigation"><a class="cancel" href="JavaScript:window.close()">Cancel</a></p>
+                    </form>
+                <br>
+            </div>
+            
+        </div>
+        
+    </div>
+    
+
+    
+</main>
+
+{% endblock %}

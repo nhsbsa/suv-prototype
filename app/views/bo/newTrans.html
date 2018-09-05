@@ -27,15 +27,46 @@
                 <div class="form-group">
             <label class="form-label">Payment type</label>
             <br>
-  <select class="form-control" name="select-box">
-    <option selected="" hidden=""></option>
-      <option>Cash</option><option>Cheque</option>
-    <option>Postal order</option>
-    <option>Bank transfer</option>
+  <select class="form-control" name="select-box" id="size_select">
+    <option selected="" hidden=""></option>                
+                <option >Cash</option>
+                <option value="option2">Cheque</option>
+    <option >Postal order</option>
+    <option >Bank transfer</option>
   </select>
                    <br>
         <br>
-        </div>    
+        </div>
+    
+    <div class="size_chart" id="option2">
+        <div class="form-group">
+            <label class="form-label">Cheque number</label>
+            <br>
+          <input class="form-control form-control-1-8" id="form-control-1-8" type="text" name="form-control-1-8">
+                   <br>
+        <br>
+        </div>
+                <div class="form-group">
+            <label class="form-label">Cheque date</label>
+            <br>
+                    <div class="form-date">
+        <div class="form-group form-group-day">
+          
+          <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="31">
+        </div>
+        <div class="form-group form-group-month">
+          
+          <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
+        </div>
+        <div class="form-group form-group-year">
+          
+          <input class="form-control" id="dob-year" name="dob-year" type="number" pattern="[0-9]*" min="0" max="2016">
+        </div>
+      </div>
+                   <br>
+        <br><br>
+        </div>
+    </div>
     
     <div class="form-group">
             <label class="form-label">Payment amount</label>
