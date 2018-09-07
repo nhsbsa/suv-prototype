@@ -27,6 +27,7 @@
             <select class="form-control" name="select-box" id="size_select">
                 <option value="option1">Change amount</option>
                 <option value="option2">Process refund</option>
+                <option value="option3">Balance transfer</option>
             </select>
             
             <br>
@@ -84,7 +85,83 @@
             <br>
             </div>
             
-            <div id="option2" class="size_chart">
+            <div id="option3" class="size_chart">
+                <h1 class="heading-medium">Balance transfer</h1>
+                <br>
+<form action="JavaScript:window.close()" method="get" class="form">
+
+                <div class="form-group">
+            <label class="form-label">PCN transferring to</label>
+            <br>
+  <select class="form-control" name="select-box">
+    <option selected="" hidden=""></option>
+    <option>323456789</option>
+  </select>
+                   <br>
+        <br>
+        </div>    
+    
+    <div class="form-group">
+            <label class="form-label">Amount to transfer</label>
+            <br>
+            <span style="font-weight: 700">£</span>
+          <input class="form-control form-control-1-8" id="form-control-1-8" type="text" name="form-control-1-8">
+                   <br>
+        <br>
+        </div>
+    
+                <div class="form-group">
+            <label class="form-label">Reason</label>
+            <br>
+  <select class="form-control" name="select-box">
+    <option selected="" hidden=""></option>
+      <option>Overpayment</option>
+      <option>Incorrect transfer</option>
+      
+
+  </select>
+                   <br>
+        <br>
+        </div>
+    
+                        <div class="form-group">
+            <label class="form-label">Transaction type</label>
+            <br>
+  <select class="form-control" name="select-box">
+    <option selected="" hidden=""></option>
+      <option>Cheque</option>
+    <option>Postal order</option>
+    <option>Bank transfer</option>
+  </select>
+                   <br>
+        <br>
+        </div>
+    
+            <div class="form-group">
+
+          <div style="width: 500px;">
+                     <textarea style="height: 150px; width:100%;"></textarea>
+            <p style="text-align: right;">0/2048</p> 
+            </div>
+        </div>
+
+        <br>
+        <br>
+        
+        <div class="form-item-wrapper">
+          <div class="form-group">
+            <input class="button" type="submit" value="Submit">
+          </div>
+        </div>
+
+        <p class="navigation"><a class="cancel" href="JavaScript:window.close()">Cancel</a></p>
+        
+      </form>
+            
+            <br>
+            </div>
+            
+                        <div id="option2" class="size_chart">
                 <h1 class="heading-medium">Process refund</h1>
                 <br>
                     <form action="JavaScript:window.close()" method="get" class="form">
@@ -119,6 +196,7 @@
                     </form>
                 <br>
             </div>
+
             
         </div>
         
