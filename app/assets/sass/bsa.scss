@@ -1487,3 +1487,24 @@ select > option {
 .transaction{
     padding-bottom: 5px;
 }
+
+.form-money .form-group {
+    float: left;
+    width: 50px;
+    margin-right: 20px;
+    margin-bottom: 0;
+    clear: none;
+}
+
+.form-money .form-group input {
+    margin-top: -1rem;
+}
+
+.form-money .form-group input {
+    margin-top: -1rem;
+    margin-left: 15px;
+}
+
+.form-money .form-group input {
+    width: 100%;
+}
