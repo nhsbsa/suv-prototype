@@ -275,7 +275,7 @@
                         </ul>
                         <div id="tab-1" class="tab1-content rpads">
                             <div class="makeScrollable1Mvp">
-                            <table class="internal-table">
+                            <table class="trans-table">
                                 <thead>  
                                 <tr>
                                 <th>Date</th>
@@ -283,6 +283,7 @@
                                 <th>Amount</th>
                                     <th>For</th>
                                 <th>Type</th>
+                                    <th></th>
                                     <th></th>
                               </tr>
                                     </thead>
@@ -294,6 +295,7 @@
                                                                                                           <td>Surcharge</td>
                                   <td>Surcharge eased</td>
                                                                                                           <td><a href="" onClick="MyWindow=window.open('removeEasment','MyWindow','width=700,height=550'); return false;">Remove easement</a></td>
+                                                                                                          <td></td>
                               </tr>
                                                                                                       <tr>
                                 <td>27/07/2017 13.30</td>
@@ -303,18 +305,21 @@
                                   <td>Cheque payment</td>
                                                                       <td>
                                                                           
-                                                                     <div class="transaction">
-                                                                          <a href="" onClick="MyWindow=window.open('amount','MyWindow','width=700,height=500'); return false;">Edit</a> 
-                                                                          </div> 
-                                                                         
-                                                                          <div class="transaction">
-                                                                          <a class="transaction" href="payRefund" onClick="MyWindow=window.open('payRefund','MyWindow','width=600,height=450'); return false;">Refund</a>
-                                                                          </div>
-                                                                         
-                                                                          <a  href="payRefund" onClick="MyWindow=window.open('transfer','MyWindow','width=600,height=450'); return false;">Transfer</a>
-                                                                          
+                                 <div class="transaction">
+                                      <a href="" onClick="MyWindow=window.open('amount','MyWindow','width=700,height=500'); return false;">Edit</a> 
+                                      </div> 
 
+                                      <div class="transaction">
+                                      <a class="transaction" href="payRefund" onClick="MyWindow=window.open('payRefund','MyWindow','width=600,height=450'); return false;">Refund</a>
+                                      </div>
                                                                                                           </td>
+                                <td>                                        <div class="transaction">                                  
+                                      <a  href="payRefund" onClick="MyWindow=window.open('transfer','MyWindow','width=600,height=450'); return false;">Transfer</a>
+                                                                          </div>
+                                                                          
+                                                                                                                <div class="transaction">                                  
+                                      <a  href="payRefund" onClick="MyWindow=window.open('transfer','MyWindow','width=600,height=450'); return false;">Fail</a>
+                                                                          </div></td>
                               </tr>
                                                                                                                                           <tr>
                                 <td>27/07/2017 13.30</td>
@@ -325,13 +330,21 @@
                                                                       <td>
                                                                          
                                                                           <div class="transaction">
-                                                                          <a class="transaction" href="payRefund" onClick="MyWindow=window.open('payRefund','MyWindow','width=600,height=450'); return false;">Refund</a>
+<p></p>
                                                                           </div>
                                                                          
-                                                                          <a  href="payRefund" onClick="MyWindow=window.open('transfer','MyWindow','width=600,height=450'); return false;">Transfer</a>
+                                                                          <a  href="cardRefund" onClick="MyWindow=window.open('cardRefund','MyWindow','width=600,height=450'); return false;">Refund</a>
                                                                           
 
                                                                                                           </td>
+<td>
+<div class="transaction">
+<a  href="payRefund" onClick="MyWindow=window.open('transfer','MyWindow','width=600,height=450'); return false;">Transfer</a>
+    </div>
+<div class="transaction">                                  
+<a  href="payRefund" onClick="MyWindow=window.open('transfer','MyWindow','width=600,height=450'); return false;">Fail</a>
+</div>
+</td>
                               </tr>
                                                                   <tr>
                                 <td>27/07/2017 13.30</td>
@@ -340,6 +353,7 @@
                                                                       <td>Surcharge</td>
                                   <td>Surcharge added</td>
                                                                       <td></td>
+                                                                      <td></td>
                               </tr>
                               <tr>
                                 <td>27/07/2017 13.30</td>
@@ -347,6 +361,7 @@
                                 <td>£58.60</td>
                                   <td>PCN</td>
                                   <td>Payment request</td>
+                                  <td></td>
                                   <td></td>
                               </tr>
 
