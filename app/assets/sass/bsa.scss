@@ -358,13 +358,7 @@ p, td, internal-table td, li {
   }
 }
 
-.form-date {
-  .form-group {
-    input {
-      margin-top: 1rem;
-    }
-  }
-}
+
 
 td.strong {
   margin: 15px 0 ;
@@ -1556,4 +1550,33 @@ p, td, internal-table td, li {
     tbody tr:hover {
         background-color: #ccc;
     }
+}
+
+input.pcnNo-control {
+    border: 2px solid grey;
+}
+
+select.pcnNo-control{
+    border: 2px solid grey;
+}
+
+.pcnNo-control {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "nta", Arial, sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 13px;
+    line-height: 1.25;
+    padding: 5px 4px 4px;
+    border: 2px solid #0b0c0c;
+    width: 100%
+}
+
+.transferName{
+    font-weight: 700;
+    padding-left: 25px;
+    margin-bottom: 0px;
+    margin-top: 12px;
 }
