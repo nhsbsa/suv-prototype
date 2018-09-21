@@ -1,0 +1,78 @@
+{% extends "layout_bsa_popup.html" %}
+
+{% block page_title %}
+  Single User View
+{% endblock %}
+
+
+
+{% block after_header %}
+
+
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+    <div class="grid-row">
+        
+        <div class="column-full highlight1">
+
+            <h1 class="heading-large">Close record</h1>
+            
+            <form action="tabs-below" method="get" class="form">
+                
+                                        <div class="form-group">
+<label class="form-label">Reason</label>
+            <br>
+            
+              <select class="form-control wide-dropdown" name="select-box">
+      <option selected hidden></option>
+    <option>MEDEX or MATEX - subsequently holds a certificate</option>
+    <option>Vulnerable - Terminal illness over 6 months</option>
+                  <option>Vulnerable - Terminal illness under 6 months</option>
+                  <option>Vulnerable - Language Difficulties</option>
+                  <option>Vulnerable - Disability or long term condition</option>
+                  <option>Extreme situation/Team manager discretion</option>
+                  <option>Same checking period</option>
+                  <option>Prescription delivered and left with a minor</option>
+                  <option>Original PCN not received</option>
+                  <option>Payment/Evidence received wthin timeframe</option>
+                  <option>Cross Over (Surcharge)</option>
+                  <option>Financial hardship - HC2 confirmed</option>
+                  <option>First letter not received</option>
+                  <option>More than one PCN in same month</option>
+                  <option>PR form not signed</option>
+  </select>
+
+        </div>
+
+        <div class="form-group">
+<label class="form-label">Notes</label>
+          <div style="width: 500px;">
+                     <textarea style="height: 150px; width:100%;"></textarea>
+            <p style="text-align: right;">0/2048</p> 
+            </div>
+        </div>
+                
+
+                <p class="alertText">Record should be checked before unlocking</p>
+
+        
+        <div class="form-item-wrapper">
+          <div class="form-group">
+            <input class="button" onclick="JavaScript:window.close()" type="submit" value="Submit">
+          </div>
+        </div>
+
+        <p class="navigation"><a class="cancel" href="JavaScript:window.close()">Cancel</a></p>
+        
+      </form>
+
+            
+
+        </div>
+    </div>
+</main>
+
+{% endblock %}
