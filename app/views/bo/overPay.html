@@ -1,0 +1,166 @@
+{% extends "layout_bsa_internal.html" %}
+
+{% block page_title %}
+  Single User View
+{% endblock %}
+
+{% block after_header %}
+  <div id="menu">
+    <div id="menu-content">
+      <div class="grid-row">
+        <div class="column-half">
+          <ul>
+            <li>
+              <a class="menu-button" href="results">Back</a>
+            </li>
+          </ul>
+        </div>
+        <div class="column-half" id="logout">
+          <a href="#">Sign out</a>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  
+  <div class="grid-row">
+    
+<h2 class="heading-medium">Overpayment report</h2>
+
+  
+    <div id="search">
+<div class="grid-row">
+   <div class="column-one-third">
+       <span class="form-label">Overpayment date from</span>
+      <div class="form-group">
+         <input class="form-control" id="reference-number" name="first-name-2" type="text">
+      </div>
+    </div>
+
+            <div class="column-one-third">
+       <span class="form-label">Overpayment date to</span>
+       <div class="form-group">
+         <input class="form-control" id="reference-number" name="first-name-2" type="text">
+      </div>
+    </div>
+                    <div class="column-one-third">
+       <span class="form-label">Ref number</span>
+       <div class="form-group">
+         <input class="form-control" id="reference-number" name="first-name-2" type="text">
+      </div>
+    </div>
+                <div class="column-one-third">
+       <span class="form-label">Forname</span>
+       <div class="form-group">
+         <input class="form-control" id="reference-number" name="first-name-2" type="text">
+      </div>
+    </div>
+                    <div class="column-one-third">
+       <span class="form-label">Surname</span>
+       <div class="form-group">
+         <input class="form-control" id="reference-number" name="first-name-2" type="text">
+      </div>
+    </div>
+        <div class="column-one-third">
+       <span class="form-label">Date of birth</span>
+       <div class="form-group">
+         <input class="form-control" id="reference-number" name="first-name-2" type="text">
+      </div>
+       </div>
+                <div class="column-one-third">
+       <span class="form-label">Postcode</span>
+       <div class="form-group">
+         <input class="form-control" id="reference-number" name="first-name-2" type="text">
+      </div>
+       </div>
+                    <div class="column-one-third">
+       <span class="form-label">Type</span>
+  <select class="form-control wide-dropdown" name="select-box">
+      <option selected>All</option>
+    <option>Debit card</option>
+    <option>Credit card</option>
+      <option>Cheque Payment</option>
+  </select>
+       </div>
+</div>
+     <div class="grid-row">
+        <div class="column-one-third">
+            <div class="form-group">
+            <a class="button" id="search-button" href="results" role="button">Search</a>
+                <a class="button" id="search-button" href="results" role="button">Reset</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="column-half">
+              <h2 class="heading-small">To be cleared: 3</h2>
+      <h2 class="heading-small">Total outstanding: 24</h2>
+    </div>
+    <div class="column-half">
+              <h2 class="heading-small">To be cleared amount: £681.86</h2>
+      <h2 class="heading-small">Total amount: £736.06</h2>
+    </div>
+
+  <div class="column-full">
+      
+
+      
+      <br>
+      
+      <table class="overpayments">
+          <tr>
+        <th>Date overpayment made ↕</th>
+        <th>Ref Number</th> 
+        <th>Forename ↕</th>
+        <th>Surname ↕</th>
+        <th>Date of birth ↕</th>
+              <th>Postcode</th>
+              <th>Type</th>
+              <th>Amount ↕</th>
+      </tr>
+      <tr>
+        <td>10/10/2018</td>
+        <td>32345679</td> 
+        <td>Tina</td>
+          <td>Belcher</td>
+          <td>13/09/1995</td>
+          <td>NE23 9JD</td>
+          <td>Credit Card</td>
+          <td>£59.40</td>
+      </tr>
+      <tr>
+        <td>10/10/2018</td>
+        <td>17495678</td> 
+        <td>Frank</td>
+          <td>Gallagher</td>
+          <td>20/03/1990</td>
+          <td>DH98 5PQ</td>
+          <td>Debit Card</td>
+          <td>£59.40</td>
+      </tr>
+                <tr>
+        <td>10/10/2018</td>
+        <td>92325619</td>  
+        <td>Karl</td>
+          <td>Dilkington</td>
+          <td>23/09/1972</td>
+                    <td>M15 5PX</td>
+                    <td>Cheque Payment</td>
+                    <td>£59.40</td>
+      </tr>
+    </table>
+
+
+  </div>
+  </div>
+
+
+    
+</main>
+
+{% endblock %}
