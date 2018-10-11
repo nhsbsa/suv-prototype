@@ -36,25 +36,54 @@
 <div class="grid-row">
    <div class="column-one-third">
        <span class="form-label">Overpayment date from</span>
-      <div class="form-group">
-         <input class="form-control" id="reference-number" name="first-name-2" type="text">
+          <div class="form-date">
+        <div class="form-group form-group-day">
+          
+          <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="31">
+        </div>
+        <div class="form-group form-group-month">
+          
+          <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
+        </div>
+        <div class="form-group form-group-year">
+          
+          <input class="form-control" id="dob-year" name="dob-year" type="number" pattern="[0-9]*" min="0" max="2016">
+        </div>
       </div>
     </div>
 
             <div class="column-one-third">
        <span class="form-label">Overpayment date to</span>
-       <div class="form-group">
-         <input class="form-control" id="reference-number" name="first-name-2" type="text">
+          <div class="form-date">
+        <div class="form-group form-group-day">
+          
+          <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="31">
+        </div>
+        <div class="form-group form-group-month">
+          
+          <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
+        </div>
+        <div class="form-group form-group-year">
+          
+          <input class="form-control" id="dob-year" name="dob-year" type="number" pattern="[0-9]*" min="0" max="2016">
+        </div>
       </div>
     </div>
                     <div class="column-one-third">
+       <p> </p>
+                        
+<br>
+                        <p> </p>
+                        <br>
+    </div>
+                        <div class="column-one-third">
        <span class="form-label">Ref number</span>
        <div class="form-group">
          <input class="form-control" id="reference-number" name="first-name-2" type="text">
       </div>
     </div>
                 <div class="column-one-third">
-       <span class="form-label">Forname</span>
+       <span class="form-label">Forename</span>
        <div class="form-group">
          <input class="form-control" id="reference-number" name="first-name-2" type="text">
       </div>
@@ -79,7 +108,7 @@
        </div>
                     <div class="column-one-third">
        <span class="form-label">Type</span>
-  <select class="form-control wide-dropdown" name="select-box">
+  <select class="form-control search-dropdown" name="select-box">
       <option selected>All</option>
     <option>Debit card</option>
     <option>Credit card</option>
@@ -114,14 +143,53 @@
       
       <table class="overpayments">
           <tr>
-        <th>Date overpayment made ↕</th>
-        <th>Ref Number</th> 
-        <th>Forename ↕</th>
-        <th>Surname ↕</th>
-        <th>Date of birth ↕</th>
-              <th>Postcode</th>
-              <th>Type</th>
-              <th>Amount ↕</th>
+        <th>
+            Date overpayment made
+            <br>
+            ▲<a href="">Ascending</a>
+            <br>
+            ▼<a href="">Descending</a>
+        </th>
+        <th>
+            Ref Number
+            <br>
+            <br>
+            <br>
+        </th> 
+        <th>Forename
+            <br>
+            <br>
+            <br>
+        </th>
+        <th>Surname
+                        <br>
+            <br>
+            <br>      
+        </th>
+        <th>
+            Date of birth
+                        <br>
+            <br>
+            <br>
+        </th>
+              <th>
+                  Postcode
+                              <br>
+            <br>
+            <br>
+              </th>
+              <th>
+                  Type
+                              <br>
+            <br>
+            <br>
+              </th>
+              <th>
+                  Amount
+                              <br>
+            <br>
+            <br>
+              </th>
       </tr>
       <tr>
         <td>10/10/2018</td>
