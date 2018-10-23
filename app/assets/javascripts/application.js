@@ -23,7 +23,7 @@ $(document).ready(function () {
      $(this).toggleClass('expand').nextUntil('tr.header').slideToggle(100);
 });
     
-$(document).ready(function(){
+
 	
 	$('ul.tabs li').click(function(){
 		var tab_id = $(this).attr('data-tab');
@@ -35,9 +35,9 @@ $(document).ready(function(){
 		$("#"+tab_id).addClass('current');
 	})
 
-})
+
     
-    $(document).ready(function(){
+
 	
 	$('ul.tabs1 li').click(function(){
 		var tab_id = $(this).attr('data-tab1');
@@ -49,9 +49,7 @@ $(document).ready(function(){
 		$("#"+tab_id).addClass('current1');
 	})
 
-})
-    
-    $(document).ready(function() {
+
 
     $('.internal-table tr').click(function() {
         var href = $(this).find("a").attr("href");
@@ -60,13 +58,7 @@ $(document).ready(function(){
         }
     });
 
-});
 
-    
-  
-})
-
-$(document).ready(function(){
 
   //hides dropdown content
   $(".size_chart").hide();
@@ -81,5 +73,19 @@ $(document).ready(function(){
     //unhides current item
     $('#'+$(this).val()).show();
   });
+    
+          //checkbox contact
+  if (document.getElementById("contact-boxes")) {
+    var textBox = document.getElementById("text");
+    var postBox = document.getElementById("post");
+    postBox.addEventListener('change', cancelPrefs);
+    function cancelPrefs() {
+       textBox.checked = false;
+    }
+    textBox.addEventListener('change', changePrefs);
+    function changePrefs() {
+       postBox.checked = false;
+    }
+  }
   
 });

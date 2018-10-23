@@ -1,0 +1,71 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  NHS Penalty Charge Notice
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  
+      <div class="grid-row">
+      <div class="column-full">
+        <div class="phase-banner">
+            <p>
+              <strong class="phase-tag">BETA</strong>
+              <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+            </p>
+          </div>
+      </div>
+    </div>
+    
+  <div class="grid-row">
+      
+    <div class="column-two-thirds">
+    
+      <div class="heading-group">
+          <p>Challenge a Penalty Charge Notice</p>
+        <h1 class="heading-large">
+          Thank you. We will now review your case and get back to you. What is the best way for us to contact you?
+        </h1>
+                        
+      </div>
+      
+        <p>You can choose email and/or telephone call.</p>
+
+       <form class="form" action="update-email" id="contact-boxes">
+        <fieldset class="form-group">
+          <div class="multiple-choice multiple-radio">
+            <input id="email" name="email" type="checkbox" value="true" checked="checked">
+            <label for="email">Email</label>
+          </div>
+          <div class="multiple-choice multiple-radio">
+            <input id="text" name="text" type="checkbox" value="true" checked="checked">
+            <label for="text">Telephone call</label>
+          </div>
+          <p class="form-block">or</p>
+          <div class="multiple-choice multiple-radio">
+            <input id="post" name="post" type="checkbox" value="true">
+            <label for="post">I don’t have access to email or a telephone</label>
+          </div>
+
+        </fieldset>
+
+
+          <div>
+
+          </div>
+
+        <div class="form-group">
+          <input class="button" type="submit" value="Next">
+        </div>
+        <p class="navigation"><a class="cancel" href="start">Cancel</a></p>
+      </form>
+      
+      </div>
+      
+    </div>      
+    
+</main>
+
+{% endblock %}
