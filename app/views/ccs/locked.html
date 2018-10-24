@@ -193,56 +193,61 @@
             </div>
             <div class="column-one-third lpads det-width3">
                 <div class="grid-row highlight1">
-                    <h1 class="heading-medium">PCN 123456789: Locked</h1>
+                    <h1 class="heading-medium">PCN 123456789: Locked until 14/12/2018</h1>
                     <p><a href="/public/images/prototypes/1/prescription-nhs.png" onClick="MyWindow=window.open('/public/images/prototypes/1/prescription-nhs.png','MyWindow','width=600,height=550'); return false;">View prescription</a></p>
-                    <div class="column-one-third lpads">
+                    <div class="column-one-third lpads pcnDet1">
 
                         <h2 class="heading-small">Prescription</h2>
-                        <p>£8.60</p>
+                        <p class="pResize">£8.60</p>
                         <h2 class="heading-small">Penalty</h2>
-                        <p>£50</p>
+                        <p class="pResize">£50</p>
                         <h2 class="heading-small">Surcharge</h2>
-                        <p>£51</p>
+                        <p class="pResize">£0</p>
                                                 <h2 class="heading-small">Requested</h2>
-                        <p>£109.60</p>
+                        <p class="pResize">£109.60</p>
                         <h2 class="heading-small">Paid</h2>
-                        <p>£0</p>
+                        <p class="pResize">£0</p>
                                                                                                 <h2 class="heading-small">Balance due</h2>
                         <p>£109.60</p>
 
                     </div>
-                    <div class="column-one-third">
+                    <div class="column-one-third pcnDet1">
 
 
                         <h2 class="heading-small">PCN sent</h2>
-                        <p>28/06/2017</p>
+                        <p class="pResize">28/06/2017</p>
                                                 <h2 class="heading-small">Surcharge sent</h2>
-                        <p>28/06/2017</p>
+                        <p class="pResize">28/06/2017</p>
                         <h2 class="heading-small">Respond by</h2>
-                        <p>28/07/2017</p>
+                        <p class="pResize">28/07/2017</p>
 
 
                                                 <h2 class="heading-small">DWP checked</h2>
-                        <p>No</p>
+                        <p class="pResize">No</p>
                         <h2 class="heading-small">Dispenser</h2>
                         <p class="pResize"><a href="" onClick="MyWindow=window.open('dispenser','MyWindow','width=700,height=500'); return false;">FRN15</a></p>
                                                                         <h2 class="heading-small">Evidence not seen?</h2>
                         <p>No</p>
                     </div>
-                    <div class="column-one-third">
+                    <div class="column-one-third pcnDet2">
 
 
 
                                                                         <h2 class="heading-small">Items</h2>
                         <p>1</p>
                                                                                                <h2 class="heading-small">Prescribed date</h2>
-                        <p>28/06/2017</p>
+                        <p class="pResize">28/06/2017</p>
                         <h2 class="heading-small">Dispensed month end date</h2>
-                        <p>28/07/2017</p>
+                        <p class="pResize">28/07/2017</p>
 
 
                                                                                                 <h2 class="heading-small">Exemption</h2>
-                        <p>(F) Prepayment  Certificate</p><h2 class="heading-small">Source</h2><p>Paper</p> <!-- <p>Electronic</p>-->
+                        <p class="pResize">(F) Prepayment  Certificate</p>
+                        
+                                                                                                                        <h2 class="heading-small">Source</h2>
+                        <p>Paper</p>
+<!--                        <p>Electronic</p>-->
+                        
                     </div>
                     <div class="column-full rpads">
                     <div class="container rpads">
@@ -251,7 +256,7 @@
                             <li class="tab-link" data-tab1="tab-1">Transactions</li>
                         </ul>
                         <div id="tab-1" class="tab1-content rpads">
-                            <div class="makeScrollable1">
+                            <div class="makeScrollable1Mvp">
                             <table class="internal-table">
                                 <thead>  
                                 <tr>
@@ -260,29 +265,33 @@
                                 <th>Amount</th>
                                     <th>For</th>
                                 <th>Type</th>
+                                    <th></th>
                               </tr>
                                     </thead>
                                 <tbody>
                                                                                                       <tr>
                                 <td>27/07/2017 13.30</td>
-                                <td>System</td> 
-                                <td>£51</td>
-                                                                                                          <td>PCN</td>
-                                  <td>Cheque</td>
+                                <td>SIRUD</td> 
+                                <td>-£51</td>
+                                                                                                          <td>Surcharge</td>
+                                  <td>Surcharge eased</td>
+                                                                                                          <td><a href="" onClick="MyWindow=window.open('removeEasment','MyWindow','width=700,height=500'); return false;">Remove easement</a></td>
                               </tr>
                                                                   <tr>
                                 <td>27/07/2017 13.30</td>
-                                <td>System</td> 
+                                <td>SYSTEM</td> 
                                 <td>£51</td>
                                                                       <td>Surcharge</td>
                                   <td>Surcharge added</td>
+                                                                      <td></td>
                               </tr>
                               <tr>
                                 <td>27/07/2017 13.30</td>
-                                <td>System</td> 
+                                <td>SYSTEM</td> 
                                 <td>£58.60</td>
                                   <td>PCN</td>
                                   <td>Payment request</td>
+                                  <td></td>
                               </tr>
 
                                     
@@ -290,11 +299,11 @@
                             </table>
                             </div>
                                                         <br>
-                            <p><a href="" onClick="MyWindow=window.open('easement','MyWindow','width=600,height=600'); return false;">Add easment</a></p>
+                            <p><a href="" onClick="MyWindow=window.open('easement','MyWindow','width=643,height=810'); return false;">Add easment</a></p>
                                                         <br>
                         </div>
                         <div id="tab-2" class="tab1-content current1">    
-                            <div class="makeScrollable1">
+                            <div class="makeScrollable1Mvp">
                             <table class="notes-table">
                                 <thead>
                                   <tr>
@@ -308,32 +317,32 @@
                                     <div>
                               <tr>
                                 <td>27/07/2017 13.00</td>
-                                <td>Tim</td> 
+                                <td>TIGOR</td> 
                                 <td>Cust told pay half to avoid surcharge. Cust non compliant, demanded manager. Call escalated</td>
                               </tr>
                             <tr>
                                 <td>27/07/2017 13.30</td>
-                                <td>Joanne</td> 
+                                <td>SIRUD</td> 
                                 <td>Info repeated as above. Cust paid half, agreed to pay next half 27/08/17</td>
                               </tr>
                                                               <tr>
                                 <td>27/07/2017 13.00</td>
-                                <td>Tim</td> 
+                                <td>TIGOR</td> 
                                 <td>Cust told pay half to avoid surcharge. Cust non compliant, demanded manager. Call escalated</td>
                               </tr>
                                                             <tr>
                                 <td>27/07/2017 13.30</td>
-                                <td>Joanne</td> 
+                                <td>SIRUD</td> 
                                 <td>Info repeated as above. Cust paid half, agreed to pay next half 27/08/17</td>
                               </tr>
                                                                                                     <tr>
                                 <td>27/07/2017 13.30</td>
-                                <td>Joanne</td> 
+                                <td>TIGOR</td> 
                                 <td>Info repeated as above. Cust paid half, agreed to pay next half 27/08/17</td>
                               </tr>
                                                                                                     <tr>
                                 <td>27/07/2017 13.30</td>
-                                <td>Joanne</td> 
+                                <td>SIRUD</td> 
                                 <td>Info repeated as above. Cust paid half, agreed to pay next half 27/08/17</td>
                               </tr>
                                         </div>
@@ -342,7 +351,7 @@
                             </table>
                             </div>
                             <br>
-                            <p><a href="addNote" onClick="MyWindow=window.open('addNote','MyWindow','width=600,height=450'); return false;">+ Add note</a></p>
+                            <p><a href="addNote" onClick="MyWindow=window.open('addNote','MyWindow','width=650,height=530'); return false;">+ Add note</a></p>
                                 
                             <br>
                         </div>
