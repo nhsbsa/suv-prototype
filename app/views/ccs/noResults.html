@@ -1,0 +1,97 @@
+{% extends "layout_bsa_internal.html" %}
+
+{% block page_title %}
+  Single User View
+{% endblock %}
+
+{% block after_header %}
+  <div id="menu">
+    <div id="menu-content">
+      <div class="grid-row">
+        <div class="column-half">
+          <ul>
+                          <li>
+              <a class="menu-button" href="#">Reports</a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="column-half" id="logout">
+          <a href="#">Sign out</a>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  
+  <div class="grid-row">
+    
+<h2 class="heading-medium">PCN Search</h2>
+
+  
+    <div id="search">
+<div class="grid-row">
+   <div class="column-one-third">
+       <span class="form-label">Reference number</span>
+      <div class="form-group">
+         <input class="form-control" id="reference-number" name="first-name-2" type="text">
+      </div>
+    </div>
+
+            <div class="column-one-third">
+       <span class="form-label">Forename</span>
+       <div class="form-group">
+         <input class="form-control" id="reference-number" name="first-name-2" type="text">
+      </div>
+    </div>
+                <div class="column-one-third">
+       <span class="form-label">Surname</span>
+       <div class="form-group">
+         <input class="form-control" id="reference-number" name="first-name-2" type="text">
+      </div>
+    </div>
+        <div class="column-one-third">
+       <span class="form-label">Date of birth</span>
+       <div class="form-group">
+         <input class="form-control" id="reference-number" name="first-name-2" type="text">
+      </div>
+       </div>
+                <div class="column-one-third">
+       <span class="form-label">Postcode</span>
+       <div class="form-group">
+         <input class="form-control" id="reference-number" name="first-name-2" type="text">
+      </div>
+       </div>
+</div>
+     <div class="grid-row">
+        <div class="column-one-third">
+            <div class="form-group">
+            <a class="button" id="search-button" href="noResults" role="button">Search</a>
+                <a class="button" id="search-button" href="badSearch" role="button">Reset</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <div class="column-full">
+      <table class="internal-table-results">
+          <tr>
+        <th>Reference</th>
+        <th>Name</th> 
+        <th>Address</th>
+        <th>D.O.B.</th>
+        <th>Status</th>
+      </tr>
+
+    </table>
+      <br>
+      <p><span class="strong">No results found</span></p>
+    </div>
+    </div>
+</main>
+
+{% endblock %}
