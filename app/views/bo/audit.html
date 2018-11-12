@@ -1,0 +1,74 @@
+{% extends "layout_bsa_popup.html" %}
+
+
+{% block page_title %}
+  Single User View
+{% endblock %}
+
+
+
+{% block after_header %}
+
+
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+    <div class="grid-row">
+        
+        <div class="column-full highlight1">
+
+            <h1 class="heading-large">Transaction changes</h1>
+            
+            <form action="tabs-below" method="get" class="form">
+
+                       
+                            <div class="makeScrollable1Mvp">
+                            <table class="trans-table">
+                                <thead>  
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>User</th> 
+                                        <th>Amount</th>
+                                        <th>For</th>
+                                        <th>Type</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                <tr>
+                                <td>27/07/2017 13.30</td>
+                                <td>t.gorringe</td> 
+                                <td>£15</td>
+                                                                      <td>Payment</td>
+                                  <td>Cheque payment</td>
+                                                                      
+
+                                </tr>
+                                                                                                                                          
+
+
+                                    
+                                </tbody>
+                            </table>
+                            </div>
+                            <br>
+
+                                                                                                                             
+
+
+
+        <p class="navigation"><a class="cancel" href="JavaScript:window.close()">Close</a></p>
+        
+      </form>
+            
+
+            
+
+        </div>
+    </div>
+</main>
+
+{% endblock %}

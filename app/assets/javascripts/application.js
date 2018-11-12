@@ -23,7 +23,6 @@ $(document).ready(function () {
      $(this).toggleClass('expand').nextUntil('tr.header').slideToggle(100);
 });
     
-
 	
 	$('ul.tabs li').click(function(){
 		var tab_id = $(this).attr('data-tab');
@@ -35,9 +34,6 @@ $(document).ready(function () {
 		$("#"+tab_id).addClass('current');
 	})
 
-
-    
-
 	
 	$('ul.tabs1 li').click(function(){
 		var tab_id = $(this).attr('data-tab1');
@@ -47,8 +43,8 @@ $(document).ready(function () {
 
 		$(this).addClass('current1');
 		$("#"+tab_id).addClass('current1');
+         
 	})
-
 
 
     $('.internal-table tr').click(function() {
@@ -57,7 +53,6 @@ $(document).ready(function () {
             window.location = href;
         }
     });
-
 
 
   //hides dropdown content
