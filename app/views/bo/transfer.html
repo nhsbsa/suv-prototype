@@ -1,95 +1,81 @@
 {% extends "layout_bsa_popup.html" %}
-
 {% block page_title %}
-  Single User View
+Single User View
 {% endblock %}
-
-
-
 {% block after_header %}
-
-
 {% endblock %}
-
 {% block content %}
-
 <main id="content" role="main">
-    <div class="grid-row">     
-        <div class="column-full highlight1">
-
-                <h1 class="heading-large">Balance transfer</h1>
-                <br>
-                <form action="JavaScript:window.close()" method="get" class="form">
-                <div class="form-group">
-                    <label class="form-label">PCN transferring to</label>
-                    <br>
-                    <select class="form-control" name="select-box" id="size_select">
-                        <option selected="" hidden=""></option>
-                        <option>323456789</option>
-                        <option>324568973</option>
-                        <option value="option2">Other</option>
-                    </select>
-
-                </div>
-
-
-                <div class="size_chart" id="option2">
-     <div class="form-group">
-                                    <div style="float:left; width: 25%;">
-                        <label class="form-label">PCN number</label>
-                        <br>           
-                                        <input class="pcnNo-control" type="text" >           
-            
-                        </div>
-                        <div style="float:left; width: 75%;">
-                            <br>
-                            <br>
-                            
-                        <p class="transferName">Jane Bloggs</p>
-
-                        </div>
-
-                </div>
-                    </div>
-
-                <div class="form-group">
-                    <label class="form-label">Amount to transfer</label>
-                    <br>
-                    <span style="font-weight: 700">£</span>
-                    <input class="form-control form-control-1-8" id="form-control-1-8" type="text" name="form-control-1-8">
-
-                </div>    
-                <div class="form-group">
-                    <label class="form-label">Reason for Transfer</label>
-                    <br>
-                    <select class="form-control" name="select-box">
-                    <option selected="" hidden=""></option>
-                    <option>Overpayment</option>
-                    <option>Incorrect transfer</option>
-                    </select>
-
-                </div>
-                <div class="form-group">
-                    <div style="width: 500px;">
-                        <textarea style="height: 150px; width:100%;"></textarea>
-                        <p style="text-align: right;">0/2048</p> 
-                    </div>
-                </div>
-
-                <div class="form-item-wrapper">
-                  <div class="form-group">
-                    <input class="button" type="submit" value="Submit">
+   <div class="grid-row">
+      <div class="column-full highlight1">
+         <h1 class="heading-large">Balance transfer</h1>
+         <br>
+         <form action="JavaScript:window.close()" method="get" class="form">
+            <div class="form-group">
+               <label class="form-label">PCN transferring to</label>
+               <br>
+               <select class="form-control" name="select-box" id="size_select">
+                  <option selected="" hidden=""></option>
+                  <option>323456789</option>
+                  <option>324568973</option>
+                  <option value="option2">Other</option>
+               </select>
+            </div>
+            <div class="size_chart" id="option2">
+               <div class="form-group">
+                  <div style="float:left; width: 25%;">
+                     <label class="form-label">PCN number</label>
+                     <br>           
+                     <input class="pcnNo-control" type="text" >           
                   </div>
-                </div>
-                <p class="navigation"><a class="cancel" href="JavaScript:window.close()">Cancel</a></p>
-
-      </form>
-            
-            <br>
-            
-
-        </div>
-    </div>
+                  <div style="float:left; width: 75%;">
+                     <br>
+                     <br>
+                     <p class="transferName">Jane Bloggs</p>
+                  </div>
+               </div>
+            </div>
+            <div class="form-group">
+               <label class="form-label">Amount to transfer</label>
+               <br>
+               <span style="font-weight: 700">£</span>
+               <input class="form-control form-control-1-8" id="form-control-1-8" type="text" name="form-control-1-8">
+            </div>
+            <div class="form-group">
+               <label class="form-label">Reason for Transfer</label>
+               <br>
+               <select class="form-control" name="select-box">
+                  <option selected="" hidden=""></option>
+                  <option>Overpayment</option>
+                  <option>Incorrect transfer</option>
+               </select>
+            </div>
+            <div class="form-group">
+               <label class="form-label">Transaction type</label>
+               <br>
+               <select class="form-control" name="select-box" id="size_select">
+                  <option selected="" hidden=""></option>
+                  <option >Card</option>
+                  <option value="option2">Cheque</option>
+                  <option >Postal order</option>
+               </select>
+               <br>
+            </div>
+            <div class="form-group">
+               <div style="width: 500px;">
+                  <textarea style="height: 150px; width:100%;"></textarea>
+                  <p style="text-align: right;">0/2048</p>
+               </div>
+            </div>
+            <div class="form-item-wrapper">
+               <div class="form-group">
+                  <input class="button" type="submit" value="Submit">
+               </div>
+            </div>
+            <p class="navigation"><a class="cancel" href="JavaScript:window.close()">Cancel</a></p>
+         </form>
+         <br>
+      </div>
+   </div>
 </main>
-
 {% endblock %}
