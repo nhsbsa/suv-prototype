@@ -836,6 +836,41 @@ table {
     }
 }
 
+.payment-table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    font-size: 16px;
+
+    td:last-child {
+      text-align: left;
+    }
+
+    td {
+      text-transform: none;
+      padding: 0.6315789474em 1.0526315789em 0.4736842105em 0;
+      text-align: left;
+      color: #0b0c0c;
+      border-bottom: 1px solid #bfc1c3;
+      &:nth-child(1) {
+        width: 15%;
+      }
+      &:nth-child(2) {
+        width: 25%;
+          font-weight: normal;
+      }
+      &:nth-child(3) {
+        width: 25%;
+      }
+        &:nth-child(4){
+            width: 25%;
+        }
+    }
+    tbody tr:hover {
+        background-color: #ccc;
+    }
+}
+
 .internal-table-results {
     border-collapse: collapse;
     border-spacing: 0;
