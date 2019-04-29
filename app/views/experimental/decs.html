@@ -220,8 +220,6 @@ Single User View
                   <p class="pResize">Universal Credit certificate (Box ‘P’)</p>
                   <h2 class="heading-small">Source</h2>
                   <p class="pResize">Paper</p>
-                  <!--<p>Electronic</p>-->
-                  <!-- DD set-up -->
                   <h2 class="heading-small">Direct Debit status</h2>
                   <p class="pResize">Active</p>
                   <h2 class="heading-small">Direct Debit reference</h2>
@@ -234,20 +232,69 @@ Single User View
                         <li class="tab-link" data-tab1="tab-1">Transactions</li>
                         <li class="tab-link" data-tab1="tab-5">Payment Plans</li>
                      </ul>
-                     <!-- NOTES -->
+
+                     <!-- TRANSACTIONS -->
                      <div id="tab-1" class="tab1-content rpads">
-                        <div class="makeScrollable1Mvp">
+                        <!-- <div class="makeScrollable1Mvp"> -->
                            <table class="internal-table">
+                              <p style="float: left; padding: 10px 0 0 0;"><a href="" onClick="MyWindow=window.open('easement','MyWindow','width=600,height=600'); return false;">Add easment</a></p>
                               <thead>
                                  <tr>
-                                    <th>Date</th>
-                                    <th>User</th>
-                                    <th>Amount</th>
-                                    <th>For</th>
-                                    <th>Type</th>
+                                    <th style="width: 22%;">Date</th>
+                                    <th style="width: 20%;">User</th>
+                                    <th style="width: 21%;">Amount</th>
+                                    <th style="width: 22%;">For</th>
+                                    <th style="width: 20%;">Type</th>
                                  </tr>
                               </thead>
+                              <tbody></tbody>
+                           </table>
+                           <div class="makeScrollable1Mvp">
+                           <table class="internal-table">
+                              <thead></thead>
                               <tbody>
+                                 <tr>
+                                    <td>27/07/2017 13.30</td>
+                                    <td>System</td>
+                                    <td>£51</td>
+                                    <td>PCN</td>
+                                    <td>Cheque</td>
+                                 </tr>
+                                 <tr>
+                                    <td>27/07/2017 13.30</td>
+                                    <td>System</td>
+                                    <td>£51</td>
+                                    <td>Surcharge</td>
+                                    <td>Surcharge added</td>
+                                 </tr>
+                                 <tr>
+                                    <td>27/07/2017 13.30</td>
+                                    <td>System</td>
+                                    <td>£58.60</td>
+                                    <td>PCN</td>
+                                    <td>Payment request</td>
+                                 </tr>
+                                 <tr>
+                                    <td>27/07/2017 13.30</td>
+                                    <td>System</td>
+                                    <td>£51</td>
+                                    <td>PCN</td>
+                                    <td>Cheque</td>
+                                 </tr>
+                                 <tr>
+                                    <td>27/07/2017 13.30</td>
+                                    <td>System</td>
+                                    <td>£51</td>
+                                    <td>Surcharge</td>
+                                    <td>Surcharge added</td>
+                                 </tr>
+                                 <tr>
+                                    <td>27/07/2017 13.30</td>
+                                    <td>System</td>
+                                    <td>£58.60</td>
+                                    <td>PCN</td>
+                                    <td>Payment request</td>
+                                 </tr>
                                  <tr>
                                     <td>27/07/2017 13.30</td>
                                     <td>System</td>
@@ -272,21 +319,35 @@ Single User View
                               </tbody>
                            </table>
                         </div>
+                        <!-- </div> -->
                         <br>
-                        <p><a href="" onClick="MyWindow=window.open('easement','MyWindow','width=600,height=600'); return false;">Add easment</a></p>
+                        <!-- <p><a href="" onClick="MyWindow=window.open('easement','MyWindow','width=600,height=600'); return false;">Add easment</a></p> -->
                         <br>
                      </div>
-                     <!-- TRANSACTIONS -->
+
+                     <!-- NOTES -->
                      <div id="tab-2" class="tab1-content current1">
-                        <div class="makeScrollable1Mvp">
+                        <!-- <div class="makeScrollable1Mvp"> -->
                            <table class="notes-table">
+                              <p style="float: left; padding: 10px 0 0 0;"><a  href="payRefund" onClick="MyWindow=window.open('addNote','MyWindow','width=600,height=450'); return false;">+ Add note</a></p>
                               <thead>
                                  <tr>
                                     <th>Date</th>
-                                    <th>Agent</th>
+                                    <th style="width:30px;">Agent</th>
                                     <th>Comments</th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
                                  </tr>
                               </thead>
+                           </table>
+                           <div class="makeScrollable1Mvp">
+                           <table class="notes-table">
                               <tbody>
                                  <div>
                                     <tr>
@@ -324,35 +385,37 @@ Single User View
                            </table>
                         </div>
                         <br>
-                        <p><a href="addNote" onClick="MyWindow=window.open('addNote','MyWindow','width=600,height=450'); return false;">+ Add note</a></p>
+                        <!-- <p><a href="addNote" onClick="MyWindow=window.open('addNote','MyWindow','width=600,height=450'); return false;">+ Add note</a></p> -->
                         <br>
                      </div>
+
                      <!-- PAYMENT PLAN -->
                      <div id="tab-5" class="tab1-content current2">
                         <div class="makeScrollable1Mvp">
                            <table class="payment-table">
+                              <p style="float: left; padding: 10px 0 0 0;"><a href="" onClick="MyWindow=window.open('dd','MyWindow','width=700,height=550'); return false;">Record payment plan</a></p>
                               <thead>
                                  <tr>
                                     <th>Date</th>
+                                    <th>User</th>
                                     <th>Type</th>
-                                    <th>Monthly Amount</th>
-                                    <th>Plan Duration</th>
+                                    <th>Status</th>
                                     <th></th>
                                  </tr>
                               </thead>
                               <tbody>
                                  <tr>
-                                    <td>27/07/2017</td>
+                                    <td>27/07/2017 13:00</td>
+                                    <td>SYSTEM</td>
                                     <td>Direct Debit</td>
-                                    <td>£11.80</td>
-                                    <td>6 months</td>
+                                    <td>Active</td>
                                     <td><a href="" onClick="MyWindow=window.open('dd','MyWindow','width=700,height=550'); return false;">View</a></td>
                                  </tr>
                                  <tr>
-                                    <td>18/04/2017</td>
+                                    <td>18/04/2017 11:34</td>
+                                    <td>LOWHI</td>
                                     <td>Manual Payment</td>
-                                    <td>£10.00</td>
-                                    <td>2 months</td>
+                                    <td>Surcharge</td>
                                     <td><a href="" onClick="MyWindow=window.open('manualPayment','MyWindow','width=700,height=550'); return false;">View</a></td>
                                  </tr>
                               </tbody>
