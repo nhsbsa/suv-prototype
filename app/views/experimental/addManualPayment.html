@@ -8,13 +8,13 @@ Single User View
 <main id="content" role="main">
    <div class="grid-row">
       <div class="column-full highlight1">
-         <h1 class="heading-large">Manual Payment</h1>
+         <h1 class="heading-large">Record manual payment</h1>
          <br>
          <form action="JavaScript:window.close()" method="get" class="form">
             <div class="form-group">
                <label class="form-label">Payment date</label>
                <br>
-               <input class="form-control form-control-1-8" id="form-control-1-8" type="text" name="form-control-1-8" style="width: 50px;">
+               <input class="form-control form-control-1-8" id="form-control-1-8" type="text" name="form-control-1-8">
                <br>
             </div>
             <div class="form-group">
@@ -31,38 +31,14 @@ Single User View
                months
                <br>
             </div>
-            <h2 class="heading-small">Payments</h2>
-            <p class="change-spacea"></p>
-            <table class="payment-table">
-               <thead>
-                  <tr>
-                     <th>Date</th>
-                     <th>Amount</th>
-                     <th></th>
-                     <th></th>
-                  </tr>
-               </thead>
-               <tbody>
-                  <tr>
-                     <td>24/04/2019</td>
-                     <td>£11.80</td>
-                     <td></td>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <td>22/03/2019</td>
-                     <td>£11.80</td>
-                     <td></td>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <td>23/02/2019</td>
-                     <td>£11.80</td>
-                     <td></td>
-                     <td></td>
-                  </tr>
-               </tbody>
-            </table>
+            <div class="form-group">
+               <label class="form-label">Notes</label>
+               <br>
+               <div style="width: 500px;">
+                  <textarea style="height: 150px; width:100%;"></textarea>
+                  <p style="text-align: right;">0/2048</p>
+               </div>
+            </div>
             <br>
             <br>
             <div class="form-item-wrapper">
@@ -72,6 +48,7 @@ Single User View
             </div>
             <p class="navigation"><a class="cancel" href="JavaScript:window.close()">Cancel</a></p>
          </form>
+         <br>
       </div>
    </div>
 </main>
