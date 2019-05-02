@@ -1,0 +1,151 @@
+{% extends "layout_bsa_popup.html" %}
+{% block page_title %}
+Single User View
+{% endblock %}
+{% block after_header %}
+{% endblock %}
+{% block content %}
+<style>
+   .radioSelect {
+   display: block;
+   position: relative;
+   padding-left: 35px;
+   margin-bottom: 12px;
+   cursor: pointer;
+   font-size: 22px;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+   }
+   .radioSelect input {
+   position: absolute;
+   opacity: 0;
+   cursor: pointer;
+   height: 0;
+   width: 0;
+   }
+   .radioSelect label {
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 25px;
+   width: 25px;
+   background-color: #fff;
+   border-radius: 50%;
+   border: 1px solid #333;
+   }
+   .radioSelect:hover input ~ .label {
+   background-color: #fff;
+   }
+   .radioSelect input:checked ~ .label {
+   background-color: #fff;
+   }
+   .label:after {
+   content: "";
+   position: absolute;
+   display: none;
+   }
+   .radioSelect input:checked ~ .label:after {
+   display: block;
+   }
+   .radioSelect .label:after {
+   top: 5px;
+   left: 5px;
+   width: 15px;
+   height: 15px;
+   border-radius: 50%;
+   background: #333;
+   }
+   .payment-table td:nth-child(1) {
+   width: 10%;
+   height: 26px;
+   }
+</style>
+<main id="content" role="main">
+   <div class="grid-row">
+      <div class="column-full highlight1">
+         <h1 class="heading-large">Add Direct Debit</h1>
+         <br>
+         <form action="JavaScript:window.close()" method="get" class="form">
+            <div class="form-group">
+               <label class="form-label">Payment date</label>
+               <br>
+               <input class="form-control form-control-1-8" id="form-control-1-8" type="text" name="form-control-1-8">
+               <br>
+            </div>
+            <h2 class="heading-small">Payment options</h2>
+            <p class="change-spacea"></p>
+            <table class="payment-table">
+               <thead>
+                  <tr>
+                     <th></th>
+                     <th>Duration</th>
+                     <th>First payment</th>
+                     <th>Following payments</th>
+                     <th></th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>
+                        <div class="radioSelect" >
+                           <input type="radio" id="2" value="3" name="plan">
+                           <label class="label" for="2">
+                        </div>
+                     </td>
+                     <td>3 months</td>
+                     <td>£118.84</td>
+                     <td>£118.83</td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                  <td>
+                     <div class="radioSelect">
+                        <input type="radio" id="3" value="3" name="plan">
+                        <label class="label" for="3">
+                     </div>
+                  </td>
+                  <td>6 months</td>
+                  <td>£59.45</td>
+                  <td>£59.41</td>
+                  <td></td>
+                  </tr>
+                  <tr>
+                  <td>
+                     <div class="radioSelect">
+                        <input type="radio" id="4" value="3" name="plan">
+                        <label class="label" for="4">
+                     </div>
+                  </td>
+                  <td>12 months</td>
+                  <td>£29.80</td>
+                  <td>£29.70</td>
+                  <td></td>
+                  </tr>
+               </tbody>
+            </table>
+            <br>
+            <br>
+            <div class="form-group">
+            <label class="form-label">Notes</label>
+            <br>
+               <div style="width: 500px;">
+                  <textarea style="height: 150px; width:100%;"></textarea>
+                  <p style="text-align: right;">0/2048</p>
+               </div>
+            </div>
+            <br>
+            <br>
+            <div class="form-item-wrapper">
+               <div class="form-group">
+                  <input class="button" type="submit" value="Submit">
+               </div>
+            </div>
+            <p class="navigation"><a class="cancel" href="JavaScript:window.close()">Cancel</a></p>
+         </form>
+         <br>
+      </div>
+   </div>
+</main>
+{% endblock %}

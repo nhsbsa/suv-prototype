@@ -394,6 +394,7 @@ Single User View
                         <div class="makeScrollable1Mvp">
                            <table class="payment-table">
                               <p style="float: left; padding: 10px 0 0 0;"><a href="" onClick="MyWindow=window.open('addManualPayment','MyWindow','width=700,height=550'); return false;">Record payment plan</a></p>
+                              <p style="float: left; padding: 10px 0 0 20px;"><a href="" onClick="MyWindow=window.open('addDd','MyWindow','width=700,height=550'); return false;">Add Direct Debit</a></p>
                               <thead>
                                  <tr>
                                     <th>Date</th>
@@ -412,9 +413,23 @@ Single User View
                                     <td><a href="" onClick="MyWindow=window.open('dd','MyWindow','width=700,height=550'); return false;">View</a></td>
                                  </tr>
                                  <tr>
+                                    <td>05/05/2017 13:00</td>
+                                    <td>SYSTEM</td>
+                                    <td>Direct Debit</td>
+                                    <td>Pending</td>
+                                    <td><a href="" onClick="MyWindow=window.open('ddPending','MyWindow','width=700,height=550'); return false;">View</a></td>
+                                 </tr>
+                                 <tr>
+                                    <td>02/05/2017 13:00</td>
+                                    <td>SYSTEM</td>
+                                    <td>Direct Debit</td>
+                                    <td>Rejected</td>
+                                    <td><!-- <a href="" onClick="MyWindow=window.open('dd','MyWindow','width=700,height=550'); return false;">View</a> --></td>
+                                 </tr>
+                                 <tr>
                                     <td>18/04/2017 11:34</td>
                                     <td>LOWHI</td>
-                                    <td>Manual Payment</td>
+                                    <td>Payment plan</td>
                                     <td>-</td>
                                     <td><a href="" onClick="MyWindow=window.open('manualPayment','MyWindow','width=700,height=550'); return false;">View</a></td>
                                  </tr>
