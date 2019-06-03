@@ -227,11 +227,10 @@ Single User View
                   <h2 class="heading-small">Source</h2>
                   <p class="pResize">Paper</p>
                   <!-- <h2 class="heading-small">Direct Debit status</h2>
-                  <p class="pResize">Active</p>
-                  <h2 class="heading-small">Direct Debit reference</h2>
-                  <p class="pResize">0012345678</p> -->
+                     <p class="pResize">Active</p>
+                     <h2 class="heading-small">Direct Debit reference</h2>
+                     <p class="pResize">0012345678</p> -->
                </div>
-
                <div class="column-full rpads" style="padding: 0;">
                   <br>
                   <div class="container rpads">
@@ -240,24 +239,23 @@ Single User View
                         <li class="tab-link" data-tab1="tab-1">Transactions</li>
                         <li class="tab-link" data-tab1="tab-5">Payment Plans</li>
                      </ul>
-
                      <!-- TRANSACTIONS -->
                      <div id="tab-1" class="tab1-content rpads">
                         <!-- <div class="makeScrollable1Mvp"> -->
-                           <table class="internal-table">
-                              <p style="float: left; padding: 10px 0 0 0;"><a href="" onClick="MyWindow=window.open('easement','MyWindow','width=600,height=600'); return false;">Add easment</a></p>
-                              <thead>
-                                 <tr>
-                                    <th style="width: 22%;">Date</th>
-                                    <th style="width: 20%;">User</th>
-                                    <th style="width: 21%;">Amount</th>
-                                    <th style="width: 22%;">For</th>
-                                    <th style="width: 20%;">Type</th>
-                                 </tr>
-                              </thead>
-                              <tbody></tbody>
-                           </table>
-                           <div class="makeScrollable1Mvp">
+                        <table class="internal-table">
+                           <p style="float: left; padding: 10px 0 0 0;"><a href="" onClick="MyWindow=window.open('easement','MyWindow','width=600,height=600'); return false;">Add easment</a></p>
+                           <thead>
+                              <tr>
+                                 <th style="width: 22%;">Date</th>
+                                 <th style="width: 20%;">User</th>
+                                 <th style="width: 21%;">Amount</th>
+                                 <th style="width: 22%;">For</th>
+                                 <th style="width: 20%;">Type</th>
+                              </tr>
+                           </thead>
+                           <tbody></tbody>
+                        </table>
+                        <div class="makeScrollable1Mvp">
                            <table class="internal-table">
                               <thead></thead>
                               <tbody>
@@ -318,29 +316,28 @@ Single User View
                         <!-- <p><a href="" onClick="MyWindow=window.open('easement','MyWindow','width=600,height=600'); return false;">Add easment</a></p> -->
                         <br>
                      </div>
-
                      <!-- NOTES -->
                      <div id="tab-2" class="tab1-content current1">
                         <!-- <div class="makeScrollable1Mvp"> -->
-                           <table class="notes-table">
-                              <p style="float: left; padding: 10px 0 0 0;"><a  href="payRefund" onClick="MyWindow=window.open('addNote','MyWindow','width=600,height=450'); return false;">+ Add note</a></p>
-                              <thead>
-                                 <tr>
-                                    <th>Date</th>
-                                    <th style="width:45px;">Agent</th>
-                                    <th>Comments</th>
-                                    <th></th>
-                                    <th></th>
-                                    <th></th>
-                                    <th></th>
-                                    <th></th>
-                                    <th></th>
-                                    <th></th>
-                                    <th></th>
-                                 </tr>
-                              </thead>
-                           </table>
-                           <div class="makeScrollable1Mvp">
+                        <table class="notes-table">
+                           <p style="float: left; padding: 10px 0 0 0;"><a  href="payRefund" onClick="MyWindow=window.open('addNote','MyWindow','width=600,height=450'); return false;">+ Add note</a></p>
+                           <thead>
+                              <tr>
+                                 <th>Date</th>
+                                 <th style="width:45px;">Agent</th>
+                                 <th>Comments</th>
+                                 <th></th>
+                                 <th></th>
+                                 <th></th>
+                                 <th></th>
+                                 <th></th>
+                                 <th></th>
+                                 <th></th>
+                                 <th></th>
+                              </tr>
+                           </thead>
+                        </table>
+                        <div class="makeScrollable1Mvp">
                            <table class="notes-table">
                               <tbody>
                                  <div>
@@ -387,27 +384,25 @@ Single User View
                         <!-- <p><a href="addNote" onClick="MyWindow=window.open('addNote','MyWindow','width=600,height=450'); return false;">+ Add note</a></p> -->
                         <br>
                      </div>
-
                      <!-- PAYMENT PLAN -->
                      <div id="tab-5" class="tab1-content current2">
                         <!-- <div class="makeScrollable1Mvp"> -->
+                        <table class="payment-table">
+                           <p style="float: left; padding: 10px 0 0 0;"><a href="" onClick="MyWindow=window.open('addManualPayment','MyWindow','width=700,height=550'); return false;">Record payment plan</a></p>
+                           <p style="float: left; padding: 10px 0 0 20px;"><a href="" onClick="MyWindow=window.open('addDd','MyWindow','width=700,height=550'); return false;">Add Direct Debit</a></p>
+                           <thead>
+                              <tr>
+                                 <th style="width: 21%;">Date</th>
+                                 <th style="width: 15%;">User</th>
+                                 <th style="width: 24%;">Type</th>
+                                 <th style="width: 16%;">Status</th>
+                                 <th></th>
+                              </tr>
+                           </thead>
+                           <tbody></tbody>
+                        </table>
+                        <div class="makeScrollable1Mvp">
                            <table class="payment-table">
-                              <p style="float: left; padding: 10px 0 0 0;"><a href="" onClick="MyWindow=window.open('addManualPayment','MyWindow','width=700,height=550'); return false;">Record payment plan</a></p>
-                              <p style="float: left; padding: 10px 0 0 20px;"><a href="" onClick="MyWindow=window.open('addDd','MyWindow','width=700,height=550'); return false;">Add Direct Debit</a></p>
-                              <thead>
-                                 <tr>
-                                    <th style="width: 21%;">Date</th>
-                                    <th style="width: 15%;">User</th>
-                                    <th style="width: 24%;">Type</th>
-                                    <th style="width: 16%;">Status</th>
-                                    <th></th>
-                                 </tr>
-                              </thead>
-                              <tbody></tbody>
-                           </table>
-                           <div class="makeScrollable1Mvp">
-                              <table class="payment-table">
-                              
                               <thead></thead>
                               <tbody>
                                  <tr>
@@ -422,7 +417,9 @@ Single User View
                                     <td>SYSTEM</td>
                                     <td>Direct Debit</td>
                                     <td>Rejected</td>
-                                    <td><!-- <a href="" onClick="MyWindow=window.open('dd','MyWindow','width=700,height=550'); return false;">View</a> --></td>
+                                    <td>
+                                       <!-- <a href="" onClick="MyWindow=window.open('dd','MyWindow','width=700,height=550'); return false;">View</a> -->
+                                    </td>
                                  </tr>
                                  <tr>
                                     <td>01/05/2017 13:00</td>
@@ -438,27 +435,25 @@ Single User View
                                     <td>-</td>
                                     <td><a href="" onClick="MyWindow=window.open('manualPayment','MyWindow','width=700,height=550'); return false;">View</a></td>
                                  </tr>
-
-
-
                                  <tr>
                                     <td>21/03/2017 09:15</td>
+                                    <td>SYSTEM</td>
+                                    <td>Direct Debit</td>
+                                    <td>Default 2</td>
+                                    <td></td>
+                                 </tr>
+                                 <tr>
+                                    <td>19/02/2017 09:15</td>
                                     <td>SYSTEM</td>
                                     <td>Direct Debit</td>
                                     <td>Default 1</td>
                                     <td></td>
                                  </tr>
-                                
-
-
                               </tbody>
-
                            </table>
-                           
-                           <br><br><br><br><br><br><br><br>
+                           <br><br><br><br><br><br>
                         </div>
                         <br>
-                       
                         <!-- <p><a href="" onClick="MyWindow=window.open('easement','MyWindow','width=600,height=600'); return false;">Add easment</a></p> -->
                         <br>
                      </div>
