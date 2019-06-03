@@ -61,11 +61,13 @@ Single User View
    width: 10%;
    height: 26px;
    }
-</style>
+   </style>
 <main id="content" role="main">
    <div class="grid-row">
       <div class="column-full highlight1">
          <h1 class="heading-large">Add Direct Debit</h1>
+         <br>
+         <label class="form-label">Outstanding amount: <span style="font-weight: 700">£109.60</span></label>
          <br>
          <form action="JavaScript:window.close()" method="get" class="form">
             <div class="form-group">
@@ -74,62 +76,125 @@ Single User View
                <input class="form-control form-control-1-8" id="form-control-1-8" type="text" name="form-control-1-8">
                <br>
             </div>
+
+   <!-- <div class="column-half"> -->
+          <!--   <div class="form-group">
+               <label class="form-label">Length of Direct Debit</label>
+               <br>
+               <select class="form-control" name="select-box" id="size_select">
+                  <option selected="" hidden="" value="option1"></option>
+                  <option value="option2">3 months</option>
+                  <option value="option3">6 months</option>
+                  <option value="option4">12 months</option>
+                  <option value="option5">Custom</option>
+               </select>
+            </div> -->
+
+
+<!-- </div>
+<div class="column-half"> -->
+            <div class="size_chart" id="option1">
+
+            </div>
+
+            <div class="size_chart" id="option2">
+               <p><span class="strong">First payment: £36.56</span></p>
+               <p><span class="strong">Following payments: £36.52</span></p>
+            </div>
+
+            <div class="size_chart" id="option3">
+               <p><span class="strong">First payment: £19.60</span></p>
+               <p><span class="strong">Following payments: £18.00</span></p>
+            </div>
+
+            <div class="size_chart" id="option4">
+               <p><span class="strong">First payment: £10.60</span></p>
+               <p><span class="strong">Following payments: £9.00</span></p>
+            </div>
+
+            <div class="size_chart" id="option5">
+               <div class="form-group">
+                  <label class="form-label">Estimated monthly amount</label>
+                  <br>
+                  <span style="font-weight: 700">£</span>
+                  <input class="form-control form-control-1-8" id="form-control-1-8" type="text" name="form-control-1-8">
+                  <br>
+               </div>
+               <p><span class="strong">First payment: £xx.xx</span></p>
+               <p><span class="strong">Following payments: £xx.xx</span></p>
+               <p><span class="strong">PCN cleared in xx months</span></p>
+            </div>
+<!-- </div>
+ -->
+            <!-- RADIO BUTTONS -->
             <h2 class="heading-small">Payment options</h2>
-            <p class="change-spacea"></p>
-            <table class="payment-table">
-               <thead>
-                  <tr>
-                     <th></th>
-                     <th>Duration</th>
-                     <th>First payment</th>
-                     <th>Following payments</th>
-                     <th></th>
-                  </tr>
-               </thead>
-               <tbody>
-                  <tr>
+               <p class="change-spacea"></p>
+               <table class="payment-table">
+                  <thead>
+                     <tr>
+                        <th></th>
+                        <th>Duration</th>
+                        <th>First payment</th>
+                        <th>Following payments</th>
+                        <th></th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td>
+                           <div class="radioSelect" >
+                              <input type="radio" id="2" value="3" name="plan">
+                              <label class="label" for="2">
+                           </div>
+                        </td>
+                        <td>3 months</td>
+                        <td>£118.84</td>
+                        <td>£118.83</td>
+                        <td></td>
+                     </tr>
+                     <tr>
                      <td>
-                        <div class="radioSelect" >
-                           <input type="radio" id="2" value="3" name="plan">
-                           <label class="label" for="2">
+                        <div class="radioSelect">
+                           <input type="radio" id="3" value="3" name="plan">
+                           <label class="label" for="3">
                         </div>
                      </td>
-                     <td>3 months</td>
-                     <td>£118.84</td>
-                     <td>£118.83</td>
+                     <td>6 months</td>
+                     <td>£59.45</td>
+                     <td>£59.41</td>
                      <td></td>
-                  </tr>
-                  <tr>
-                  <td>
-                     <div class="radioSelect">
-                        <input type="radio" id="3" value="3" name="plan">
-                        <label class="label" for="3">
-                     </div>
-                  </td>
-                  <td>6 months</td>
-                  <td>£59.45</td>
-                  <td>£59.41</td>
-                  <td></td>
-                  </tr>
-                  <tr>
-                  <td>
-                     <div class="radioSelect">
-                        <input type="radio" id="4" value="3" name="plan">
-                        <label class="label" for="4">
-                     </div>
-                  </td>
-                  <td>12 months</td>
-                  <td>£29.80</td>
-                  <td>£29.70</td>
-                  <td></td>
-                  </tr>
-               </tbody>
-            </table>
-            <br>
+                     </tr>
+                     <tr>
+                     <td>
+                        <div class="radioSelect">
+                           <input type="radio" id="4" value="3" name="plan">
+                           <label class="label" for="4">
+                        </div>
+                     </td>
+                     <td>12 months</td>
+                     <td>£29.80</td>
+                     <td>£29.70</td>
+                     <td></td>
+                     </tr>
+                     <tr>
+                     <td>
+                        <div class="radioSelect">
+                           <input type="radio" id="5" value="3" name="plan">
+                           <label class="label" for="5">
+                        </div>
+                     </td>
+                     <td><input class="form-control form-control-1-8" id="form-control-1-8" type="text" name="form-control-1-8" style="width: 75px;"></td>
+                     <td><input class="form-control form-control-1-8" id="form-control-1-8" type="text" name="form-control-1-8" style="width: 75px;"></td>
+                     <td><input class="form-control form-control-1-8" id="form-control-1-8" type="text" name="form-control-1-8" style="width: 75px;"></td>
+                     <td></td>
+                     </tr>
+                  </tbody>
+               </table>
+     
             <br>
             <div class="form-group">
-            <label class="form-label">Notes</label>
-            <br>
+               <label class="form-label">Notes</label>
+               <br>
                <div style="width: 500px;">
                   <textarea style="height: 150px; width:100%;"></textarea>
                   <p style="text-align: right;">0/2048</p>
