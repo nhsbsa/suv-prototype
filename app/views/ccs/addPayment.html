@@ -1,0 +1,46 @@
+{% extends "layout_bsa_popup.html" %}
+{% block page_title %}
+Single User View
+{% endblock %}
+{% block after_header %}
+{% endblock %}
+{% block content %}
+
+<style> 
+   input[type=text]:disabled {
+     background: #dddddd;
+   }
+</style>
+
+
+<main id="content" role="main">
+   <div class="grid-row">
+      <div class="column-full highlight1">
+         <h1 class="heading-large">Add payment</h1>
+         <form action="tabs-below" method="get" class="form">
+        <div class="form-group">
+           <label class="form-label">Balance due</label>
+           <br>
+           <span style="font-weight: 700">£</span>
+           <input class="form-control form-control-1-8" id="form-control-1-8" disabled="disabled" type="text" name="form-control-1-8" value="15">
+           <br>
+        </div>
+        <div class="form-group">
+           <label class="form-label">Amount to pay</label>
+           <br>
+           <span style="font-weight: 700">£</span>
+           <input class="form-control form-control-1-8" id="form-control-1-8" type="text" name="form-control-1-8" value="15">
+           <br>
+        </div>
+            <br>
+            <div class="form-item-wrapper">
+               <div class="form-group">
+                  <input class="button" onclick="JavaScript:window.close()" type="submit" value="Submit">
+               </div>
+            </div>
+            <p class="navigation"><a class="cancel" href="JavaScript:window.close()">Cancel</a></p>
+         </form>
+      </div>
+   </div>
+</main>
+{% endblock %}
