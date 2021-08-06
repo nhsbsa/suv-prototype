@@ -1,0 +1,113 @@
+{% extends "layout_bsa_internal.html" %}
+{% block page_title %}
+Single User View
+{% endblock %}
+{% block after_header %}
+<div id="menu">
+   <div id="menu-content">
+      <div class="grid-row">
+         <div class="column-half">
+            <ul>
+               <li>
+                  <a class="menu-button" href="#">Reports</a>
+               </li>
+               <div class="column-half">
+                  <ul>
+                     <li>
+                        <a class="menu-button" href="#">Locked Cases</a>
+                     </li>
+      
+         <div class="column-half" id="logout">
+            <a href="#">Sign out</a>
+         </div>
+      </div>
+   </div>
+</div>
+{% endblock %}
+{% block content %}
+<main id="content" role="main">
+   <div class="grid-row">
+      <h2 class="heading-medium">Locked Cases</h2>
+            
+      <div class="column-full">
+         <div class="form-group">
+            <table class="internal-table-results">
+               <tr>
+                  <th>Service type</th>
+                  <th>Reference</th>
+                  <th>Date lock applied</th>
+                  <th>Lock duration</th>
+                  <th>Lock Reason</th>
+                  <th>Unclock Date</th>
+                  <th>Days till unlock</th>
+                  <th>No action required</th>
+               </tr>
+               <tr>
+                  <td>PECS</td>
+                  <td><a href="tabs-below">563789098</a></td>
+                  <td>15/12/2019</td>
+                  <td>14</td>
+                  <td>Sending signed decleration</td>
+                  <td>29/12/2019</td>
+                  <td>-3</td>
+                  <td> <div class="nhsuk-checkboxes__item">
+                     <input class="nhsuk-checkboxes__input" id="contact-2" name="contact" type="checkbox" value="phone">
+                     <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-2">
+                       
+                     </label>
+                   </div></td>
+               </tr>
+               
+               </tr>
+               <tr>
+                  <td>DECS</a></td>
+                  <td><a href="locked">676543456</a></td>
+                  <td>30/12/2019</td>
+                  <td>28</td>
+                  <td></td>
+                  <td>27/12/2019</td>
+                  <td>26</td>
+                  <td> <div class="nhsuk-checkboxes__item">
+                     <input class="nhsuk-checkboxes__input" id="contact-2" name="contact" type="checkbox" value="phone">
+                     <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-2">
+                       
+               </tr>
+               <tr>
+                  <td>DECS</a></td>
+                  <td><a href="closed">876789878</a></td>
+                  <td>31/12/2019</td>
+                  <td>30</td>
+                  <td></td>
+                  <td>30/01/2020</td>
+                  <td>29</td>
+                  <td> <div class="nhsuk-checkboxes__item">
+                     <input class="nhsuk-checkboxes__input" id="contact-2" name="contact" type="checkbox" value="phone">
+                     <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-2">
+                     </tr>
+                     <tr>
+                        <td>PECS</a></td>
+                        <td><a href="closed">789098765</a></td>
+                        <td>01/12/2019</td>
+                        <td>60</td>
+                        <td></td>
+                        <td>30/01/2020</td>
+                        <td>43</td>
+                        <td> <div class="nhsuk-checkboxes__item">
+                           <input class="nhsuk-checkboxes__input" id="contact-2" name="contact" type="checkbox" value="phone">
+                           <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-2">
+               </tr>
+            </table>
+         </div>
+         <a class="button" id="search-button" href="remove-warning.html" role="button" style="float: right;">remove</a>
+      </div>
+         <div class="grid-row">
+            <div class="column-one-third">
+               <div class="form-group">
+                  
+            </div>
+         </div>
+      </div>
+      
+          
+           
+{% endblock %}
