@@ -1,0 +1,76 @@
+{% extends "layout_bsa_popup.html" %}
+
+{% block page_title %}
+  Single User View
+{% endblock %}
+
+{% block after_header %}
+
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+    <div class="grid-row">
+        
+        <div class="column-full highlight1">
+
+            <h1 class="heading-large">Remove Lock</h1>
+            
+            
+            
+                <div class="error-summary" role="alert" aria-labelledby="error-summary-heading-example-2" tabindex="-1">
+                    
+                    
+
+      <h2 class="heading-medium error-summary-heading" id="error-summary-heading-example-2">
+        If you select the remove button all records that you have selected with a tick in the 'no action' section will be deleted from the lock list.
+      </h2>
+
+      <p>
+        Please ensure that you have checked that the record should be removed and deleted from the lock list.
+      </p>
+
+      <ul class="error-summary-list">
+        <li><a href="#example-full-name"></a></li>
+        
+      </ul>
+
+    </div>
+            
+            <form action="tabs-below" method="get" class="form">
+
+     
+  </select>
+                   <br>
+        <br>
+        </div>
+            
+                           
+        
+        <br>
+            <br>
+          
+            <div class="form-group form-group-error">
+<label class="form-label"></label>
+            <br>
+            
+         
+        
+        <div class="form-item-wrapper"></div>
+          <div class="form-group">
+            <input class="button" onclick="JavaScript:window.close()" type="submit" value="Remove">
+          </div>
+        </div>
+
+        <p class="navigation"><a class="cancel" href="JavaScript:window.close()">Cancel</a></p>
+        
+      </form>
+            
+            
+
+        </div>
+    </div>
+</main>
+
+{% endblock %}
