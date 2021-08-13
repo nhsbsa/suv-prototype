@@ -1,0 +1,54 @@
+{% extends "layout_bsa_internal.html" %}
+
+{% block page_title %}
+  Single User View
+{% endblock %}
+
+{% block after_header %}
+  <div id="menu">
+
+  </div>
+
+{% endblock %}
+
+{% block content %}
+<style>
+    input.form-control{
+        width:33.3%;
+    }
+</style>
+
+<main id="content" role="main">
+
+    <div class="grid-row">
+      <div class="column-two-thirds">
+
+        <div class="heading-group">
+          <h1 class="heading-large">Sign in</h1>
+        </div>
+        <p>Use your NHSBSA details to sign in.</p>
+
+
+        <div class="form-group">
+          <label class="form-label-bold" for="first-name-2">Username</label> 
+           <input class="form-control" id="first-name-2" name="first-name-2" type="text">
+        </div>
+        <div class="form-group">
+          <label class="form-label-bold" for="last-name-2">Password</label> <input class="form-control" id="last-name-2" name="last-name-2" type="text">
+        </div>
+
+        <details>
+          <summary>
+            <span class="summary">Forgotten your password?</span>
+          </summary>
+          <div class="panel panel-border-narrow">
+            <p>If you've forgotten your password, you should contact the Service Desk on 0870 010 3241.</p>
+          </div>
+        </details>
+        <br>
+        <p><a class="button" href="search-form" id="next">Sign in</a></p>
+      </div>
+    </div>
+</main>
+
+{% endblock %}
