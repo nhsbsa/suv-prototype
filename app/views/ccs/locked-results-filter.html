@@ -1,0 +1,242 @@
+{% extends "layout_bsa_internal.html" %}
+{% block page_title %}
+Single User View
+{% endblock %}
+{% block after_header %}
+<div id="menu">
+   <div id="menu-content">
+      <div class="grid-row">
+         <div class="column-full">
+            <ul>
+               <li>
+                  <a class="menu-button" href="locked-results.html">Locked Cases</a>
+               </li>
+               <li class="sign-out-link">
+                  <a href="#">Sign out</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </div>
+</div>
+         </div>
+      </div>
+   </div>
+</div>
+
+{% endblock %}
+{% block content %}
+<main id="content" role="main">
+   <div class="grid-row">
+      <h2 class="heading-medium">Locked Cases</h2>
+                    
+      <form action="tabs-below" method="get" class="form">
+
+         <div class="form-group">
+                                         <div class="form-group">
+             <label class="form-label">Sort categories by</label>
+             <br>
+   <select class="form-control" name="select-box">
+
+      <option>Include all locked cases</option>
+     <option>PECS</option>
+     <option>DECS</option>
+     <option>Reference</option>
+       <option>Date lock applied</option>
+       <option>Lock duration</option>
+       <option>Lock reason</option>
+       <option>Unlock date</option>
+       <option>Days till unlock</option>
+       
+   </select>
+                    <br>
+         <br>
+      <div class="column-full">
+         <div class="form-group">
+            <table class="internal-table-results">
+               <tr>
+                  <th>Service type</th>
+                  <th>Reference</th>
+                  <th>Date lock applied</th>
+                  <th>Lock duration</th>
+                  <th>Lock reason</th>
+                  <th>Unlock date</th>
+                  <th>Days till unlock</th>
+                  <th>No action required</th>
+               </tr>
+               <tr>
+                  <td>PECS</td>
+                  <td><a href="tabs-below">563789098</a></td>
+                  <td>15/12/2019</td>
+                  <td>14</td>
+                  <td>Sending signed decleration</td>
+                  <td>29/12/2019</td>
+                  <td>-3</td>
+                  <td> <div class="nhsuk-checkboxes__item">
+                     <input class="nhsuk-checkboxes__input" id="contact-2" name="contact" type="checkbox" value="phone">
+                     <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-2">
+                       
+                     </label>
+                   </div></td>
+               </tr>
+               
+               </tr>
+               <tr>
+                  <td>DECS</a></td>
+                  <td><a href="locked">676543456</a></td>
+                  <td>30/12/2019</td>
+                  <td>28</td>
+                  <td></td>
+                  <td>27/12/2019</td>
+                  <td>26</td>
+                  <td> <div class="nhsuk-checkboxes__item">
+                     <input class="nhsuk-checkboxes__input" id="contact-2" name="contact" type="checkbox" value="phone">
+                     <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-2">
+                       
+               </tr>
+               <tr>
+                  <td>DECS</a></td>
+                  <td><a href="closed">876789878</a></td>
+                  <td>31/12/2019</td>
+                  <td>30</td>
+                  <td></td>
+                  <td>30/01/2020</td>
+                  <td>29</td>
+                  <td> <div class="nhsuk-checkboxes__item">
+                     <input class="nhsuk-checkboxes__input" id="contact-2" name="contact" type="checkbox" value="phone">
+                     <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-2">
+                     </tr>
+                     <tr>
+                        <td>PECS</a></td>
+                        <td><a href="closed">789098765</a></td>
+                        <td>01/12/2019</td>
+                        <td>60</td>
+                        <td></td>
+                        <td>30/01/2020</td>
+                        <td>43</td>
+                        <td> <div class="nhsuk-checkboxes__item">
+                           <input class="nhsuk-checkboxes__input" id="contact-2" name="contact" type="checkbox" value="phone">
+                           <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-2">
+               </tr>
+               <tr>
+                  <td>PECS</a></td>
+                  <td><a href="closed">789098765</a></td>
+                  <td>01/12/2019</td>
+                  <td>60</td>
+                  <td></td>
+                  <td>30/01/2020</td>
+                  <td>43</td>
+                  <td> <div class="nhsuk-checkboxes__item">
+                     <input class="nhsuk-checkboxes__input" id="contact-2" name="contact" type="checkbox" value="phone">
+                     <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-2">
+         </tr>
+         <tr>
+            <td>PECS</a></td>
+            <td><a href="closed">789098765</a></td>
+            <td>01/12/2019</td>
+            <td>60</td>
+            <td></td>
+            <td>30/01/2020</td>
+            <td>43</td>
+            <td> <div class="nhsuk-checkboxes__item">
+               <input class="nhsuk-checkboxes__input" id="contact-2" name="contact" type="checkbox" value="phone">
+               <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-2">
+   </tr>
+   <tr>
+      <td>PECS</a></td>
+      <td><a href="closed">789098765</a></td>
+      <td>01/12/2019</td>
+      <td>60</td>
+      <td></td>
+      <td>30/01/2020</td>
+      <td>43</td>
+      <td> <div class="nhsuk-checkboxes__item">
+         <input class="nhsuk-checkboxes__input" id="contact-2" name="contact" type="checkbox" value="phone">
+         <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-2">
+</tr>
+<tr>
+   <td>PECS</a></td>
+   <td><a href="closed">789098765</a></td>
+   <td>01/12/2019</td>
+   <td>60</td>
+   <td></td>
+   <td>30/01/2020</td>
+   <td>43</td>
+   <td> <div class="nhsuk-checkboxes__item">
+      <input class="nhsuk-checkboxes__input" id="contact-2" name="contact" type="checkbox" value="phone">
+      <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-2">
+</tr>
+<tr>
+   <td>PECS</a></td>
+   <td><a href="closed">789098765</a></td>
+   <td>01/12/2019</td>
+   <td>60</td>
+   <td></td>
+   <td>30/01/2020</td>
+   <td>43</td>
+   <td> <div class="nhsuk-checkboxes__item">
+      <input class="nhsuk-checkboxes__input" id="contact-2" name="contact" type="checkbox" value="phone">
+      <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-2">
+</tr>
+<tr>
+   <td>PECS</a></td>
+   <td><a href="closed">789098765</a></td>
+   <td>01/12/2019</td>
+   <td>60</td>
+   <td></td>
+   <td>30/01/2020</td>
+   <td>43</td>
+   <td> <div class="nhsuk-checkboxes__item">
+      <input class="nhsuk-checkboxes__input" id="contact-2" name="contact" type="checkbox" value="phone">
+      <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-2">
+</tr>
+            </table>
+         </div>
+         <a class="button" id="search-button" href="remove-warning.html" role="button" style="float: right;">remove</a>
+      </div>
+         <div class="grid-row">
+            <div class="column-one-third">
+               <div class="form-group">
+                  
+            </div>
+         </div>
+      </div>
+      
+      <div class="tabs">
+
+         <div class="tabs-nav">
+           <ul class="tabs-list">
+             <li><a href="#tab-1" aria-selected="true">Page 1</a></li>
+             <li><a href="#tab-2">Page 2</a></li>
+             <li><a href="#tab-3">page 3</a></li>
+           </ul>
+         </div>
+       
+         <div class="tabs-content">
+       
+           <div class="tabs-panel" id="tab-1" role="tabpanel">
+             <div class="tabs-panel-inner text">
+               <h3></h3>
+               <p></p>
+             </div>
+           </div>
+       
+           <div class="tabs-panel" id="tab-2" aria-hidden="true">
+             <div class="tabs-panel-inner text">
+               <h3>Tab 2</h3>
+               <p>Some content would go here for tab 2.</p>
+             </div>
+           </div>
+       
+           <div class="tabs-panel" id="tab-3" aria-hidden="true">
+             <div class="tabs-panel-inner text">
+               <h3>Tab 3</h3>
+               <p>Some content would go here for tab 3.</p>
+             </div>
+           </div>
+       
+         </div>
+       
+       </div>
+           
+{% endblock %}
