@@ -1,0 +1,95 @@
+{% extends "layout_bsa_popup.html" %}
+
+{% block page_title %}
+  Single User View
+{% endblock %}
+
+{% block after_header %}
+
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+    <div class="grid-row">
+        
+        <div class="column-full highlight1">
+
+            <h1 class="heading-large">Place penalty on lock</h1>
+            
+            <br>
+            
+            <form action="tabs-below" method="get" class="form">
+
+        <div class="form-group">
+                                        <div class="form-group">
+            <label class="form-label">Time on lock</label>
+            <br>
+  <select class="form-control" name="select-box">
+    <option>14 days</option>
+    <option>28 days</option>
+      <option>30 days</option>
+      <option>60 days</option>
+      <option>60 days check med/mat</option>
+      <option>90 days</option>
+  </select>
+                   <br>
+        <br>
+        </div>
+            
+                            <input type="checkbox" class="applyAll"> Add lock to tracker<br>
+        
+        <br>
+            <br>
+            <div class="form-group">
+              <div class="form-group">
+<label class="form-label">Reason for locking</label>
+<br>
+<select class="form-control" name="select-box">
+<option>a. Applying for MEDEX</option>
+<option>b.Applying for MADEX </option>
+<option>C. Financial hardship (HC2)</option>
+<option>d. Sending signed declaration</option>
+<option>e. Sending benefit evidence</option>
+<option>f. Didn't get evidence</option>
+<option>g. Delay getting letter</option>
+<option>h. Insufficient funds to pay</option>
+<option>i. Complaint</option>
+<option>j. Long-life exemption</option>
+<option>k. COVID-19</option>
+<option>l. RO Process</option>
+<option>m. Other</option>
+</select>    
+<br>    
+<br>
+<br>
+<div class="form-group">
+  <div class="form-group">
+<label class="form-label">Notes</label>
+<br>
+<br>
+            <br>
+          <div style="width: 500px;">                      <textarea style="height: 150px; width:100%;"></textarea>             <p style="text-align: right;">0/2048</p>              </div>
+        </div>
+                
+
+        
+        <br>
+        
+        <div class="form-item-wrapper">
+          <div class="form-group">
+            <input class="button" onclick="JavaScript:window.close()" type="submit" value="Save and continue">
+          </div>
+        </div>
+
+        <p class="navigation"><a class="cancel" href="JavaScript:window.close()">Cancel</a></p>
+        
+      </form>
+            
+            
+
+        </div>
+    </div>
+</main>
+
+{% endblock %}
