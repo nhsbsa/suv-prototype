@@ -9,7 +9,7 @@ Single User View
          <div class="column-half">
             <ul>
                <li>
-                  <a class="menu-button" href="locked-results.html">Back to search</a> 
+                  <a class="menu-button" href="search-form-locked-cases.html">Back</a> 
                </li>
                <li>
                   <a class="menu-button" href="lock-list.html" onClick="MyWindow=window.open('lock-list','MyWindow','width=600,height=600'); return false;">Lock</a>
@@ -238,11 +238,13 @@ Single User View
                         <li class="tab-link" data-tab1="tab-1">Transactions</li>
                         <!-- <li class="tab-link" data-tab1="tab-5">Payment Plans</li> -->
                      </ul>
+                     
                      <!-- NOTES -->
                      <div id="tab-1" class="tab1-content rpads">
                         <div class="makeScrollable1Mvp" style="    margin-bottom: 30px;     height: auto;">
                            <table class="internal-table">
                               <thead>
+                                 <p><a href="" onClick="MyWindow=window.open('addPayment','MyWindow','width=600,height=600'); return false;">Add payment</a> &nbsp;<a href="" onClick="MyWindow=window.open('easement','MyWindow','width=600,height=600'); return false;">Add easment</a> &nbsp; <a class="" id="search-button" href="paying-dd.html" role="button">Add direct debit</a>         
                                  <tr>
                                     <th>Date</th>
                                     <th>User</th>
@@ -292,9 +294,7 @@ Single User View
                         </div>
                         
                         <!-- <br> -->
-                         <p><a href="" onClick="MyWindow=window.open('addPayment','MyWindow','width=600,height=600'); return false;">Add payment</a></p>
-                         <p><a href="" onClick="MyWindow=window.open('easement','MyWindow','width=600,height=600'); return false;">Add easment</a></p>
-                         <p><a href="" onClick="MyWindow=window.open('paying-dd','MyWindow','width=600,height=600'); return false;">Add direct debit</a></p>
+                        
                          
                         <!-- <br> -->
                      </div>
@@ -302,6 +302,7 @@ Single User View
                      <!-- TRANSACTIONS -->
                      <div id="tab-2" class="tab1-content current1">
                         <!-- <div class="makeScrollable1Mvp"> -->
+                           
                            <table class="notes-table">
                               <p style="float: left; padding: 10px 0 0 0;"><a  href="payRefund" onClick="MyWindow=window.open('addNote','MyWindow','width=600,height=450'); return false;">+ Add note</a></p>
                               <thead>
@@ -402,15 +403,7 @@ Single User View
                         <br>
                      </div>
                   </div>
-                  <div class="grid-row">
-                     <div class="column-one-third">
-                         <div class="form-group">
-                         <a class="button" id="search-button" href="paying-dd.html" role="button">Add direct debit</a>
-                         </div>
-                     </div>
-                 </div>
-             </div>       
-             </div>       
+             
                  
                      </div>
                   </div>
