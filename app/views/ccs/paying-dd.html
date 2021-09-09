@@ -15,56 +15,62 @@ Single User View
     <h1 class="heading-large">Paying by Direct Debit</h1>
     <form action="tabs-below" method="get" class="form">
       <div class="form-group">
-        <p class="form-label">Direct debit lets the customer pay their penalty over a number of months, on a date that suits them.</p>
+        <p class="form-label">A Direct debit lets you pay your penalty charge over 3,6,12,15 or 18 months, on a date that suits you.</p>
         
         <div class="notice">
           <i class="icon icon-important">
             <span class="visually-hidden">Warning</span>
           </i>
           <strong class="bold-small">
-            If the customer is unable to make a payment, they may have to pay extra charges.
+            You may have to pay extra charges if we are unable to take a payment. 
+            <p>
           </strong>
         </div>
       </div>    
         </h1>
         <p>
-          They must confirm the following to set up a direct debit with you online. *Read the Direct Debit notice to them*
+          <p class="form-label">We may cancel your Direct Debit if we are unable to take payments on more that one occasion. This may mean that you would need to pay the amount in full.
         </p>
-        
+        <strong class="bold-small">
+          
         <form>
-          <div class="form-group">
+          <div class="form-group">Before setting up a Direct Debit, can you confirm the following?
+            <p>
+            <p></p>
             <fieldset>
-        
-              <legend class="visually-hidden">What is your nationality?</legend>
-        
-              <div class="multiple-choice">
-                <input id="nationalities-british" name="nationalities" type="checkbox" value="British">
-                <label for="nationalities-british">I am using my own bank account</label>
-              </div>
-              <div class="multiple-choice">
-                <input id="nationalities-irish" name="nationalities" type="checkbox" value="Irish">
-                <label for="nationalities-irish">I am the only person required to authorise debits on this account</label>
-              </div>
-              <div class="multiple-choice" data-target="example-different-country">
-                <input id="nationalities-other" name="nationalities" type="checkbox" value="Citizen of a different country">
-                <label for="nationalities-other">I understand that if you are unable to take payments on more than one occasion, I might have to pay
-                  extra charges and may not be able to pay by Direct Debit again
-                </label>
-              </div>
+              <form>
+                <div class="form-group">
+                    <fieldset>
               
-            </fieldset>
-          </div>
-        </form>
-​   <br>
-<p>
-  
-  Read the customer the Direct Debit Gaurantee <a class="cancel" href="JavaScript:window.close()">Direct Debit Gaurantee</a></p> 
-
-<div class="form-item-wrapper">
-  <div class="form-group">
-    <input class="button" onclick="JavaScript:window.close()" type="set" value="Pay by direct debit">
-  </div>
+                  
+              
+                    <div class="multiple-choice">
+                      <input id="radio-1" type="radio" name="radio-group" value="You're using your own bank account">
+                      <label for="radio-1">You're using your own bank account</label>
+                    </div>
+                    <div class="multiple-choice">
+                      <input id="radio-2" type="radio" name="radio-group" value="You're the only person required to authorise debits on the account">
+                      <label for="radio-2">You're the only person required to authorise debits on the account</label>
+                    </div>
+                    
+                    <div class="multiple-choice">
+                      <input id="radio-3" type="radio" name="radio-group" value="You understand that if we're unable to take payments on more than one occasion, extra charges may apply and you may not be able to pay by Direct Debit again">
+                      <label for="radio-3">You understand that if we're unable to take payments on more than one occasion, <p></p>extra charges may apply and you may not be able to pay by Direct Debit again</label>
+                    </div>
+              
+                  </fieldset>
+                </div>
+              </form>          
+              
+        
+             
+   
+  Read the <a href="https://www.directdebit.co.uk/DirectDebitExplained/pages/directdebitguarantee.aspx" target="_blank">Direct Debit Guarantee</a></p>
+<P></P>
 </div>
+  <div class="form-group">
+    <input class="button" onclick="JavaScript:window.close()" type="set" value=" Save and continue">
+  </div>
 
 <p class="navigation"><a class="cancel" href="JavaScript:window.close()">Cancel</a></p>
 
