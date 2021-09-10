@@ -9,7 +9,11 @@ Single User View
 {% endblock %}
 ​
 {% block content %}
-​
+​<main id="content" role="main">
+  <div class="grid-row">
+     
+       
+           <div class="grid-row highlight1">
 <main id="content" role="main">
   <div class="grid-row">
     <h1 class="heading-large">Paying by Direct Debit</h1>
@@ -37,33 +41,36 @@ Single User View
           <div class="form-group">Before setting up a Direct Debit, can you confirm the following?
             <p>
             <p></p>
-            <fieldset>
-              <form>
-                <div class="form-group">
-                    <fieldset>
+            <form class="form" action="contact-handler" id="contact-boxes">
+              <fieldset class="form-group" style="margin-bottom: 10px;">
+                 
+                 </legend>
+                 <div class="multiple-choice multiple-radio">
+                    <input id="opt1" name="opt1" type="checkbox" value="true">
+                    <label for="opt1">You're using your own bank account</label>
+                 </div>
               
-                  
+                 </legend>
+                 <div class="multiple-choice multiple-radio">
+                    <input id="opt2" name="opt2" type="checkbox" value="true">
+                    <label for="opt2">You're the only person required to authorise debits on this account.</label>
+                 </div>
               
+                 </legend>
+                 <div class="multiple-choice multiple-radio">
+                    <input id="opt3" name="opt3" type="checkbox" value="true">
+                    <label for="opt3">You understand that if we're unable to take payments on more than one occasion,<p></p>extra chargesmay apply and you may not be able to pay by Direct Debit again</label>
+                 </div>
+              </fieldset>
                    
-                    </div>
-                    <div class="multiple-choice">
-                      <input id="nationalities-british" name="nationalities" type="checkbox" value="British">
-                      <label for="nationalities-british">You're using your own bank account
-                      </div>
-                      <div class="multiple-choice">
-                        <input id="nationalities-british" name="nationalities" type="checkbox" value="British">
-                        <label for="nationalities-british">You're the only person required to authorise debits on the account
-                        </div>
-                        <div class="multiple-choice">
-                          <input id="nationalities-british" name="nationalities" type="checkbox" value="British">
-                          <label for="nationalities-british">You understand that if we're unable to take payments on more than one occasion, <p></p>extra charges may apply and you may not be able to pay by Direct Debit again
-                            
+           
+ 
+          
+                
+                  
+            
                     
-                  </fieldset>
-                </div>
-              </form>          
               
-        
              
    
               
@@ -79,6 +86,27 @@ Single User View
 
 </div>
 {% endblock %}               
+                               
+                                      
+                                 
+                                      
+                                      
+                                
+        
+       
+            
+            
+            
+       
+
+            
+
+        
+    
+
+    
+
+             
                                
                                       
                                  
